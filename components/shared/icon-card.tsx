@@ -1,18 +1,17 @@
-import { cn } from "@/lib/utils";
-
 interface IconCardProps {
-  icon?: React.ReactNode;
+  icon: string;
   title: string;
-  text: string;
-  className?: string;
+  description: string;
 }
 
-export default function IconCard({ icon, title, text, className }: IconCardProps) {
+export function IconCard({ icon, title, description }: IconCardProps) {
   return (
-    <div className={cn("bg-card border border-border rounded-sm p-6", className)}>
-      {icon && <div className="text-accent mb-4">{icon}</div>}
-      <h3 className="font-serif text-lg text-primary mb-2">{title}</h3>
-      <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
+    <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+      <div className="text-4xl mb-4">{icon}</div>
+      <h3 className="text-xl font-bold text-slate-900 mb-2">{title}</h3>
+      <p className="text-slate-600 text-sm leading-relaxed">{description}</p>
     </div>
   );
 }
+
+export default IconCard;
