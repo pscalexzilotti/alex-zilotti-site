@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -12,22 +13,20 @@ const links = [
   { href: "/contato", label: "Contato" },
 ];
 
-interface MainNavProps {
-  onClose?: () => void;
-}
-
-export function MainNav({ onClose }: MainNavProps) {
+export default function MainNav() {
   const pathname = usePathname();
+
   return (
-    <nav className="flex flex-col md:flex-row gap-6 md:gap-8">
+    <nav className="hidden md:flex items-center gap-8">
       {links.map((link) => (
         <Link
           key={link.href}
           href={link.href}
-          onClick={onClose}
           className={cn(
-            "text-sm tracking-wide transition-colors hover:text-accent",
-            pathname === link.href ? "text-accent font-medium" : "text-foreground"
+            "text-sm font-medium transition-colors hover:text-accent",
+            pathname === link.href
+              ? "text-accent"
+              : "text-foreground/80"
           )}
         >
           {link.label}
