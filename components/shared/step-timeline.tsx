@@ -1,30 +1,34 @@
 interface Step {
-  number: string;
+  step: string;
   title: string;
-  text: string;
+  description: string;
 }
 
 interface StepTimelineProps {
   steps: Step[];
 }
 
-export default function StepTimeline({ steps }: StepTimelineProps) {
+export function StepTimeline({ steps }: StepTimelineProps) {
   return (
-    <div className="flex flex-col gap-8">
-      {steps.map((step, i) => (
-        <div key={i} className="flex gap-6">
+    <div className="space-y-8">
+      {steps.map((item, index) => (
+        <div key={item.step} className="flex gap-6">
           <div className="flex flex-col items-center">
-            <div className="w-10 h-10 rounded-sm bg-accent text-accent-foreground flex items-center justify-center font-serif font-bold text-sm">
-              {step.number}
+            <div className="w-12 h-12 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+              {item.step}
             </div>
-            {i < steps.length - 1 && <div className="w-px flex-1 bg-accent/20 mt-2" />}
+            {index < steps.length - 1 && (
+              <div className="w-0.5 flex-1 bg-slate-200 mt-2" />
+            )}
           </div>
-          <div className="pt-1 pb-8">
-            <h3 className="font-serif text-lg text-primary mb-2">{step.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{step.text}</p>
+          <div className="pb-8">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
+            <p className="text-slate-600">{item.description}</p>
           </div>
         </div>
       ))}
     </div>
   );
 }
+
+export default StepTimeline;
