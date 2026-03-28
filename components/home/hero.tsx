@@ -9,18 +9,18 @@ export default function Hero() {
         {/* Texto */}
         <div>
           <p className="text-xs uppercase tracking-widest text-accent mb-4">
-            Psicologia Juridica &bull; TCC de Alta Performance &bull; Imersoes em hoteis de alto padrao
+            Psicologia Jurídica • TCC de Alta Performance • Imersões em hotéis de alto padrão
           </p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-tight mb-6">
-            Psicologia Clinica Cognitiva Comportamental para Alta Performance e Psicologia Juridica e Forense.
+            Psicologia Clínica Cognitiva Comportamental para Alta Performance e Psicologia Jurídica e Forense.
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Atendimento psicologico e imersoes para empresarios, influenciadores, artistas e
-            executivos que lidam com pressao constante, exposicao publica e decisoes de alto impacto.
+            Atendimento psicológico e imersões para empresários, influenciadores, artistas e
+            executivos que lidam com pressão constante, exposição pública e decisões de alto impacto.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" variant="primary">
-              <Link href="/contato">Agendar sessao</Link>
+              <Link href="/contato">Agendar sessão</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -29,8 +29,8 @@ export default function Hero() {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground mt-6">
-            Psicologo graduado - Pos-graduando em Psicologia Forense e Juridica e em TCC de Alta
-            Performance - MBA em Gestao de Pessoas - CRP 08/48529
+            Psicólogo graduado – Pós-graduando em Psicologia Forense e Jurídica e em TCC de Alta
+            Performance – MBA em Gestão de Pessoas – CRP 08/48529
           </p>
         </div>
         {/* Foto */}
