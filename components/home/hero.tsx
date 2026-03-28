@@ -9,18 +9,18 @@ export default function Hero() {
         {/* Texto */}
         <div>
           <p className="text-xs uppercase tracking-widest text-accent mb-4">
-            Psicologia Jurídica • TCC de Alta Performance • Imersões em hotéis de alto padrão
+            Psicologia Juridica &bull; TCC de Alta Performance &bull; Imersoes em hoteis de alto padrao
           </p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-tight mb-6">
-            Psicologia Jurídica, Alta Performance e Hipnose clínica como recurso auxiliar.
+            Psicologia Clinica Cognitiva Comportamental para Alta Performance e Psicologia Juridica e Forense.
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Atendimento psicológico e imersões para empresários, influenciadores, artistas e
-            executivos que lidam com pressão constante, exposição pública e decisões de alto impacto.
+            Atendimento psicologico e imersoes para empresarios, influenciadores, artistas e
+            executivos que lidam com pressao constante, exposicao publica e decisoes de alto impacto.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" variant="primary">
-              <Link href="/contato">Agendar sessão</Link>
+              <Link href="/contato">Agendar sessao</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -29,24 +29,13 @@ export default function Hero() {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground mt-6">
-            Psicólogo graduado · Pós-graduando em Psicologia Forense e Jurídica e em TCC de Alta
-            Performance · MBA em Gestão de Pessoas · CRP 08/48529
+            Psicologo graduado - Pos-graduando em Psicologia Forense e Juridica e em TCC de Alta
+            Performance - MBA em Gestao de Pessoas - CRP 08/48529
           </p>
         </div>
-
         {/* Foto */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-72 h-96 md:w-80 md:h-[440px]">
-            <div
-              className="absolute inset-0 border border-accent rounded-sm"
-              style={{ transform: "translate(8px,8px)" }}
-            />
-            <img
-              src="/images/alex-portrait-1.jpg"
-              alt="Alex Zilotti – Psicólogo CRP 08/48529"
-              className="relative z-10 w-full h-full object-cover rounded-sm grayscale"
-            />
-          </div>
+        <div className="hidden md:flex justify-center items-center">
+          <div className="w-full max-w-sm aspect-[3/4] bg-muted rounded-sm border border-border" />
         </div>
       </div>
     </section>
