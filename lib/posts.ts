@@ -1,51 +1,77 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-const postsDirectory = path.join(process.cwd(), "content/posts");
-
-export interface PostMeta {
+export interface Post {
+  slug: string;
   title: string;
   date: string;
-  excerpt: string;
-  category: string;
-  slug: string;
+  excerpt?: string;
+  category?: string;
+  author?: string;
+  contentHtml?: string;
 }
 
-export function getAllPosts(): PostMeta[] {
-  if (!fs.existsSync(postsDirectory)) return [];
-  const fileNames = fs.readdirSync(postsDirectory).filter((f) => /\.mdx?$/.test(f));
-  return fileNames
+const postsDirectory = path.join(process.cwd(), 'content/posts');
+
+function ensurePostsDirectory() {
+  if (!fs.existsSync(postsDirectory)) {
+    return false;
+  }
+  return true;
+}
+
+export function getAllPosts(): Post[] {
+  if (!ensurePostsDirectory()) return [];
+
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPosts = fileNames
+    .filter((f) => f.endsWith('.mdx') || f.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.mdx?$/, "");
+      const slug = fileName.replace(/\.mdx?$/, '');
       const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data } = matter(fileContents);
+
       return {
         slug,
-        title: data.title ?? "",
-        date: data.date ?? "",
-        excerpt: data.excerpt ?? "",
-        category: data.category ?? "",
-      };
+        title: data.title || slug,
+        date: data.date || '',
+        excerpt: data.excerpt,
+        category: data.category,
+        author: data.author,
+      } as Post;
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+  return allPosts;
 }
 
-export function getPostBySlug(slug: string): { meta: PostMeta; content: string } {
-  const mdxPath = path.join(postsDirectory, `${slug}.mdx`);
-  const mdPath = path.join(postsDirectory, `${slug}.md`);
-  const fullPath = fs.existsSync(mdxPath) ? mdxPath : mdPath;
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+export function getPostBySlug(slug: string): Post | null {
+  if (!ensurePostsDirectory()) return null;
+
+  const extensions = ['.mdx', '.md'];
+  let fileContents: string | null = null;
+
+  for (const ext of extensions) {
+    const fullPath = path.join(postsDirectory, `${slug}${ext}`);
+    if (fs.existsSync(fullPath)) {
+      fileContents = fs.readFileSync(fullPath, 'utf8');
+      break;
+    }
+  }
+
+  if (!fileContents) return null;
+
   const { data, content } = matter(fileContents);
+
   return {
-    meta: {
-      slug,
-      title: data.title ?? "",
-      date: data.date ?? "",
-      excerpt: data.excerpt ?? "",
-      category: data.category ?? "",
-    },
-    content,
-  };
+    slug,
+    title: data.title || slug,
+    date: data.date || '',
+    excerpt: data.excerpt,
+    category: data.category,
+    author: data.author,
+    contentHtml: content,
+  } as Post;
 }
