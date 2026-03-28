@@ -8,7 +8,7 @@ interface SectionProps {
   id?: string;
 }
 
-export default function Section({ children, className, muted, dark, id }: SectionProps) {
+export function Section({ children, className, muted, dark, id }: SectionProps) {
   return (
     <section
       id={id}
@@ -23,3 +23,5 @@ export default function Section({ children, className, muted, dark, id }: Sectio
     </section>
   );
 }
+
+export default Section;
