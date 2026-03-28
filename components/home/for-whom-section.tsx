@@ -2,17 +2,15 @@ import Section from "@/components/shared/section";
 import SectionHeader from "@/components/shared/section-header";
 import IconCard from "@/components/shared/icon-card";
 import homeData from "@/content/home.json";
-import { Briefcase, Mic2, Scale, Users } from "lucide-react";
-
-const icons = [<Briefcase size={28} />, <Mic2 size={28} />, <Scale size={28} />, <Users size={28} />];
 
 export default function ForWhomSection() {
+  const { for_whom } = homeData;
   return (
     <Section muted>
-      <SectionHeader title="Para quem e o meu trabalho" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {homeData.forWhom.map((item, i) => (
-          <IconCard key={i} icon={icons[i % icons.length]} title={item.title} text={item.text} />
+      <SectionHeader title={for_whom.title} subtitle={for_whom.subtitle} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {for_whom.items.map((item, i) => (
+          <IconCard key={i} icon={item.icon} title={item.title} description={item.description} />
         ))}
       </div>
     </Section>
