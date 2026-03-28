@@ -1,97 +1,87 @@
-import { Metadata } from 'next';
-import { SectionHeader } from '@/components/shared/section-header';
-import { Section } from '@/components/shared/section';
+import type { Metadata } from "next";
+import Section from "@/components/shared/section";
+import SectionHeader from "@/components/shared/section-header";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/utils";
+import { MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Contato | Alex Zilotti - Psicólogo',
-  description: 'Entre em contato com Alex Zilotti para agendar sua consulta ou tirar dúvidas sobre os serviços de psicologia.',
+  title: "Contato | Alex Zilotti Psicólogo",
+  description:
+    "Entre em contato para agendar uma sessão. Psicologia Jurídica, TCC de Alta Performance e Hipnose clínica como recurso auxiliar. CRP 08/48529.",
 };
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5544999999999';
-
 export default function ContatoPage() {
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.`;
-
   return (
-    <main>
-      <Section className="bg-slate-900 text-white">
+    <>
+      <Section>
         <SectionHeader
           title="Contato"
-          subtitle="Vamos conversar? Estou aqui para ajudá-lo no seu processo de desenvolvimento pessoal."
-          centered
-          className="text-white [&>p]:text-slate-300"
+          subtitle="O primeiro passo é uma sessão inicial para entendermos sua demanda."
         />
-      </Section>
-
-      <Section>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Informações de contato */}
-          <div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Fale comigo</h2>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <span className="text-2xl">📱</span>
-                <div>
-                  <h3 className="font-semibold text-slate-900">WhatsApp</h3>
-                  <p className="text-slate-600 text-sm mb-2">Respondo em até 24 horas úteis</p>
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded-lg transition-colors"
-                  >
-                    Iniciar conversa no WhatsApp
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-6">
+            <div className="flex items-start gap-4">
+              <MessageCircle size={24} className="text-accent mt-1 shrink-0" />
+              <div>
+                <h3 className="font-serif text-primary text-lg mb-1">WhatsApp</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Respondo em até 24 horas úteis.
+                </p>
+                <Button asChild size="sm" variant="primary">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                    Iniciar conversa
                   </a>
-                </div>
+                </Button>
               </div>
-
-              <div className="flex items-start gap-4">
-                <span className="text-2xl">📍</span>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Localização</h3>
-                  <p className="text-slate-600">Atendimento presencial e online</p>
-                  <p className="text-slate-500 text-sm">Paraná, Brasil</p>
-                </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <MapPin size={24} className="text-accent mt-1 shrink-0" />
+              <div>
+                <h3 className="font-serif text-primary text-lg mb-1">Localização</h3>
+                <p className="text-muted-foreground text-sm">
+                  Atendimento presencial e online.
+                </p>
+                <p className="text-muted-foreground text-sm">São José dos Pinhais – PR, Brasil.</p>
               </div>
-
-              <div className="flex items-start gap-4">
-                <span className="text-2xl">⏰</span>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Horários</h3>
-                  <p className="text-slate-600">Segunda a Sexta: 8h - 20h</p>
-                  <p className="text-slate-500 text-sm">Sábados mediante agendamento</p>
-                </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Clock size={24} className="text-accent mt-1 shrink-0" />
+              <div>
+                <h3 className="font-serif text-primary text-lg mb-1">Horários</h3>
+                <p className="text-muted-foreground text-sm">Segunda a Sexta: 8h – 20h.</p>
+                <p className="text-muted-foreground text-sm">Sábados mediante agendamento.</p>
               </div>
             </div>
           </div>
-
-          {/* Informações adicionais */}
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Como funciona o agendamento</h2>
-            <ol className="space-y-4">
+            <h2 className="font-serif text-2xl text-primary mb-6">
+              Como funciona o agendamento
+            </h2>
+            <ol className="flex flex-col gap-4">
               {[
-                { step: '1', text: 'Entre em contato via WhatsApp ou e-mail' },
-                { step: '2', text: 'Faremos uma breve conversa para entender suas necessidades' },
-                { step: '3', text: 'Definimos juntos o melhor dia e horário' },
-                { step: '4', text: 'Começamos o processo na data agendada' },
-              ].map(({ step, text }) => (
-                <li key={step} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-7 h-7 bg-slate-900 text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    {step}
+                "Entre em contato via WhatsApp.",
+                "Fazemos uma breve conversa para entender sua demanda.",
+                "Definimos juntos o melhor dia e horário.",
+                "Começamos o processo na data agendada.",
+              ].map((step, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-sm font-bold">
+                    {i + 1}
                   </span>
-                  <span className="text-slate-600 pt-0.5">{text}</span>
+                  <span className="text-foreground pt-0.5 text-sm">{step}</span>
                 </li>
               ))}
             </ol>
-
-            <div className="mt-8 p-4 bg-slate-50 rounded-xl border border-slate-200">
-              <p className="text-slate-500 text-sm">
-                <strong>Sigilo garantido:</strong> Todos os atendimentos seguem o Código de Ética do CFP. CRP 08/48529.
+            <div className="mt-8 p-4 border border-border rounded-sm">
+              <p className="text-xs text-muted-foreground">
+                <strong>Sigilo garantido:</strong> Todos os atendimentos seguem o Código de
+                Ética Profissional do Psicólogo. CRP 08/48529.
               </p>
             </div>
           </div>
         </div>
       </Section>
-    </main>
+    </>
   );
 }
