@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className="font-serif text-4xl md:text-5xl text-primary-foreground leading-tight mb-6">{hero.headline}</h1>
           <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">{hero.subheadline}</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="primary">
+            <Button asChild size="lg" variant="primary">
               <Link href="/contato">{hero.cta_primary}</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
