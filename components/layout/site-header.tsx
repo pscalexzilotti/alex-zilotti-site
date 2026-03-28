@@ -2,9 +2,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { MainNav } from "./main-nav";
+import MainNav from "./main-nav";
 
-export function SiteHeader() {
+export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-background border-b border-border sticky top-0 z-50">
@@ -22,7 +22,7 @@ export function SiteHeader() {
       </div>
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 py-6">
-          <MainNav onClose={() => setOpen(false)} />
+          <MainNav />
         </div>
       )}
     </header>
