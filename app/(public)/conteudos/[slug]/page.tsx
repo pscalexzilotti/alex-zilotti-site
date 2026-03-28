@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getAllPosts } from '@/lib/posts';
+import { getPostBySlug, getAllPosts, Post } from '@/lib/posts';
 import { Section } from '@/components/shared/section';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ interface Props {
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  return posts.map((post: Post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -37,24 +37,24 @@ export default function PostPage({ params }: Props) {
             </Link>
           </div>
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-4">
-            <span>{new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</span>
-            {post.category && (
+            <span>{new Date(post!.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</span>
+            {post!.category && (
               <>
                 <span>•</span>
-                <span className="bg-slate-700 px-2 py-0.5 rounded">{post.category}</span>
+                <span className="bg-slate-700 px-2 py-0.5 rounded">{post!.category}</span>
               </>
             )}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">{post.title}</h1>
-          {post.excerpt && (
-            <p className="text-xl text-slate-300 mt-4">{post.excerpt}</p>
+          <h1 className="text-4xl md:text-5xl font-bold">{post!.title}</h1>
+          {post!.excerpt && (
+            <p className="text-xl text-slate-300 mt-4">{post!.excerpt}</p>
           )}
         </div>
       </Section>
 
       <Section>
         <article className="max-w-3xl mx-auto prose prose-slate prose-lg">
-          <div dangerouslySetInnerHTML={{ __html: post.contentHtml || '' }} />
+          <div dangerouslySetInnerHTML={{ __html: post!.contentHtml || '' }} />
         </article>
         <div className="max-w-3xl mx-auto mt-12 pt-8 border-t border-slate-200">
           <Link
