@@ -1,30 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-inter: 'Inter', sans-serif;
-  --font-playfair: 'Playfair Display', Georgia, serif;
-}
-
 @layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 30% 10%;
+    --card: 40 33% 98%;
+    --card-foreground: 220 30% 10%;
+    --primary: 220 40% 12%;
+    --primary-foreground: 40 33% 96%;
+    --accent: 38 65% 48%;
+    --accent-foreground: 40 33% 96%;
+    --muted: 40 15% 88%;
+    --muted-foreground: 220 10% 45%;
+    --border: 38 30% 82%;
+    --ring: 38 65% 48%;
+    --radius: 0.125rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4 {
-    @apply font-serif;
+  h1, h2, h3, h4, h5, h6,
+  .font-serif {
+    font-family: var(--font-playfair), "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    line-height: 1.15;
+    color: hsl(var(--primary));
+    letter-spacing: -0.01em;
   }
 
-  a {
-    @apply transition-colors duration-200;
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 700;
+  }
+
+  p, li, span, a, label, input, textarea, button {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  .label-caps {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: hsl(var(--accent));
   }
 }
 
 @layer utilities {
-  .gold-line {
-    @apply border-b-2 border-accent;
+  .font-serif {
+    font-family: var(--font-playfair), "Playfair Display", Georgia, serif;
   }
 }
