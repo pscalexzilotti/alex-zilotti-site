@@ -9,15 +9,15 @@ export default function Hero() {
     <section className="w-full min-h-[85vh] flex items-center bg-primary px-6">
       <div className="max-w-5xl mx-auto py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="text-xs uppercase tracking-widest text-accent mb-4">{hero.credibilityLine}</p>
-          <h1 className="font-serif text-4xl md:text-5xl text-primary-foreground leading-tight mb-6">{hero.title}</h1>
-          <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">{hero.subtitle}</p>
+          <p className="text-xs uppercase tracking-widest text-accent mb-4">Psicologo CRP 08/48529</p>
+          <h1 className="font-serif text-4xl md:text-5xl text-primary-foreground leading-tight mb-6">{hero.headline}</h1>
+          <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">{hero.subheadline}</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" variant="primary">
-              <Link href="/contato">{hero.primaryCtaLabel}</Link>
+            <Button asChild size="primary">
+              <Link href="/contato">{hero.cta_primary}</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{hero.secondaryCtaLabel}</a>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{hero.cta_secondary}</a>
             </Button>
           </div>
         </div>
