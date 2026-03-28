@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "headline": "Psicologia que transforma vidas reais",
+    "subheadline": "Atendimento especializado para quem busca clareza, equilíbrio e alta performance sem perder a saúde mental.",
+    "cta_primary": "Agendar Consulta",
+    "cta_secondary": "Conhecer os Serviços"
+  },
+  "for_whom": {
+    "title": "Para quem é o meu trabalho?",
+    "subtitle": "Atendo adultos que estão em momentos de transição, buscando crescimento ou enfrentando desafios emocionais.",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Executivos e líderes",
+        "description": "Profissionais de alta performance que precisam de suporte psicológico para sustentar resultados sem colapso."
+      },
+      {
+        "icon": "⚖️",
+        "title": "Profissionais do Direito",
+        "description": "Advogados, juízes e operadores do direito que atuam em contextos de alta pressão e complexidade emocional."
+      },
+      {
+        "icon": "🌱",
+        "title": "Pessoas em transição",
+        "description": "Quem está passando por mudanças de carreira, relacionamentos ou buscando reestruturação de vida."
+      }
+    ]
+  },
+  "how_i_help": {
+    "title": "Como eu posso ajudar?",
+    "subtitle": "Minha abordagem combina psicoterapia baseada em evidências com ferramentas práticas de desenvolvimento pessoal.",
+    "items": [
+      {
+        "icon": "🧠",
+        "title": "Psicoterapia Individual",
+        "description": "Processo terapêutico personalizado com base na TCC e outras abordagens científicas."
+      },
+      {
+        "icon": "🎯",
+        "title": "Coaching Psicológico",
+        "description": "Desenvolvimento de estratégias práticas para alcançar objetivos e superar bloqueios."
+      },
+      {
+        "icon": "📊",
+        "title": "Avaliação Psicológica",
+        "description": "Diagnóstico preciso para embasar o processo terapêutico e decisoes importantes."
+      }
+    ]
+  }
+}
