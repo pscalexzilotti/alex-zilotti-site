@@ -1,18 +1,17 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { WHATSAPP_URL } from "@/lib/utils";
 
 export default function ImmersionTeaser() {
   return (
     <section className="bg-[#0a1628] py-20 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="label-caps mb-4">Experiencia Intensiva</p>
+          <p className="label-caps mb-4">Experiência Intensiva</p>
           <h2 className="font-serif text-white text-3xl md:text-4xl mb-4">
-            Imersao Rotas de Alta Performance Emocional
+            Imersão Rotas de Alta Performance Emocional
           </h2>
           <p className="text-gray-300 text-base leading-relaxed mb-8">
-            3 dias em hotel de alto padrao para pausar, olhar para a propria
+            3 dias em hotel de alto padrão para pausar, olhar para a própria
             vida com profundidade e redesenhar sua rota com clareza.
           </p>
           <Button
@@ -20,7 +19,7 @@ export default function ImmersionTeaser() {
             asChild
             className="bg-amber-600 hover:bg-amber-700 text-white border-0"
           >
-            <Link href="/imersao">Conhecer a Imersao</Link>
+            <Link href="/imersao">Conhecer a Imersão</Link>
           </Button>
         </div>
         <div className="hidden md:block h-64 bg-[#112240] rounded-sm border border-amber-900/30" />
