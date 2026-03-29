@@ -18,7 +18,7 @@ export default function SiteFooter() {
           </p>
           <p className="text-sm text-gray-600">Psicólogo | CRP 08/48529</p>
           <p className="text-sm text-gray-600">
-            São José dos Pinhais - PR, Brasil
+            Curitiba - PR, Brasil
           </p>
         </div>
 
@@ -40,21 +40,17 @@ export default function SiteFooter() {
 
         <div>
           <p className="label-caps mb-4">Aviso Legal</p>
-          <p className="text-xs text-gray-500 leading-relaxed">
-            Este site tem caráter informativo. Não substitui avaliação
-            psicológica individual. Atendimento em conformidade com o Código
-            de Ética Profissional do Psicólogo e as Resoluções do CFP.
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Este site tem caráter informativo. Não substitui avaliação psicológica individual.
+            Atendimento em conformidade com o Código de Ética Profissional do Psicólogo e
+            as Resoluções do CFP.
           </p>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-amber-200 flex flex-col sm:flex-row justify-between items-center gap-2">
-        <p className="text-xs text-gray-400">
-          © {new Date().getFullYear()} Alex Cristoffer Zilotti. CRP 08/48529.
-        </p>
-        <p className="text-xs text-gray-400">
-          Psicólogo Jurídico e Alta Performance - São José dos Pinhais, PR
-        </p>
+      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-amber-100 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-500">
+        <p>© {new Date().getFullYear()} Alex Cristoffer Zilotti. CRP 08/48529.</p>
+        <p>Psicólogo Jurídico e Alta Performance - Curitiba, PR</p>
       </div>
     </footer>
   );
