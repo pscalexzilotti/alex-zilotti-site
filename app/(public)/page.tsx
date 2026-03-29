@@ -7,8 +7,9 @@ import AboutSummary from "@/components/home/about-summary";
 import SessionsHowItWorks from "@/components/home/sessions-how-it-works";
 
 export const metadata: Metadata = {
-  title: "Alex Zilotti | Psicologo Juridico e Alta Performance",
-  description: "Psicologia Juridica, TCC de Alta Performance e Hipnose clinica como recurso auxiliar. CRP 08/48529.",
+  title: "Alex Zilotti | Psicólogo Jurídico e Alta Performance",
+  description:
+    "Psicologia Jurídica, TCC de Alta Performance e Hipnose clínica como recurso auxiliar. CRP 08/48529.",
 };
 
 export default function HomePage() {
