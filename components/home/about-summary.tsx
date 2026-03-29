@@ -8,7 +8,7 @@ export default function AboutSummary() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="hidden md:flex justify-center">
           <Image
-            src="/images/Design sem nome.png"
+            src="/images/Design%20sem%20nome.png"
             alt="Alex Zilotti Psicólogo"
             width={320}
             height={480}
