@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_URL } from "@/lib/utils";
 
@@ -35,6 +36,16 @@ export default function Hero() {
         </div>
 
         {/* Foto */}
+        <div className="hidden md:flex justify-center items-center">
+          <Image
+            src="/images/hero-alex.jpg"
+            alt="Alex Zilotti Psicólogo"
+            width={400}
+            height={560}
+            className="rounded-sm object-cover object-top shadow-lg border border-amber-200"
+            priority
+          />
+        </div>
       </div>
     </section>
   );
