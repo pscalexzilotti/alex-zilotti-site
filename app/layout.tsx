@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "hipnose clínica",
     "psicólogo para empresários",
     "psicólogo para influenciadores",
-    "São José dos Pinhais",
+    "Curitiba",
   ],
   openGraph: {
     locale: "pt_BR",
