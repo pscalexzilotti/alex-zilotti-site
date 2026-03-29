@@ -12,7 +12,7 @@ export default function Hero() {
             Psicologia Jurídica • TCC de Alta Performance • Imersões em hotéis de alto padrão
           </p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-tight mb-6">
-            Psicologia Clínica Cognitiva Comportamental para Alta Performance e Psicologia Jurídica e Forense.
+            Psicologia Cognitiva Comportamental para Alta Performance
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
             Atendimento psicológico e imersões para empresários, influenciadores, artistas e
@@ -33,10 +33,8 @@ export default function Hero() {
             Performance – MBA em Gestão de Pessoas – CRP 08/48529
           </p>
         </div>
+
         {/* Foto */}
-        <div className="hidden md:flex justify-center items-center">
-          <div className="w-full max-w-sm aspect-[3/4] bg-muted rounded-sm border border-border" />
-        </div>
       </div>
     </section>
   );
