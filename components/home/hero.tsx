@@ -38,7 +38,7 @@ export default function Hero() {
         {/* Foto */}
         <div className="hidden md:flex justify-center items-center">
           <Image
-            src="/images/hero-alex.jpg"
+            src="/images/Design%20sem%20nome%20(1).png"
             alt="Alex Zilotti Psicólogo"
             width={400}
             height={560}
