@@ -21,20 +21,20 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://alex-zilotti-site.vercel.app"),
   title: {
-    default: "Alex Zilotti | Psicologo Juridico e Alta Performance",
-    template: "%s | Alex Zilotti Psicologo",
+    default: "Alex Zilotti | Psicólogo Jurídico e Alta Performance",
+    template: "%s | Alex Zilotti Psicólogo",
   },
   description:
-    "Psicologia Juridica, TCC de Alta Performance e Hipnose clinica como recurso auxiliar. Atendimento para empresarios, influenciadores, artistas e executivos. CRP 08/48529.",
+    "Psicologia Jurídica, TCC de Alta Performance e Hipnose clínica como recurso auxiliar. Atendimento para empresários, influenciadores, artistas e executivos. CRP 08/48529.",
   keywords: [
-    "psicologo juridico",
-    "psicologo forense",
-    "psicologo alta performance",
+    "psicólogo jurídico",
+    "psicólogo forense",
+    "psicólogo alta performance",
     "TCC alta performance",
-    "hipnose clinica",
-    "psicologo para empresarios",
-    "psicologo para influenciadores",
-    "Sao Jose dos Pinhais",
+    "hipnose clínica",
+    "psicólogo para empresários",
+    "psicólogo para influenciadores",
+    "São José dos Pinhais",
   ],
   openGraph: {
     locale: "pt_BR",
@@ -48,13 +48,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
-      <head>
-        <meta charSet="UTF-8" />
-      </head>
-      <body className="min-h-screen flex flex-col">
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} ${playfair.variable}`}
+    >
+      <body>
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        {children}
         <SiteFooter />
       </body>
     </html>
