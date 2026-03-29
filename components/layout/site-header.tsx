@@ -8,13 +8,13 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-background border-b border-border sticky top-0 z-50">
-      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between" style={{ minHeight: "72px" }}>
-        <Link href="/" className="flex items-center py-2">
+      <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+        <Link href="/">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-az.png"
             alt="Alex Zilotti Psicólogo"
-            style={{ height: "52px", width: "auto", display: "block" }}
+            style={{ height: "48px", width: "auto", display: "block", objectFit: "contain", objectPosition: "top" }}
           />
         </Link>
         <div className="hidden md:flex">
