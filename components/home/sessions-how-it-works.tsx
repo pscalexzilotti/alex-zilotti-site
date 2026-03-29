@@ -4,22 +4,21 @@ export default function SessionsHowItWorks() {
       numero: "01",
       titulo: "Contato inicial",
       descricao:
-        "Voce entra em contato pelo WhatsApp. Respondemos com agilidade e sem julgamentos.",
+        "Você entra em contato pelo WhatsApp. Respondemos com agilidade e sem julgamentos.",
     },
     {
       numero: "02",
-      titulo: "Sessao de avaliacao",
+      titulo: "Sessão de avaliação",
       descricao:
-        "Na primeira sessao nos conhecemos. Voce traz sua historia e eu proponho um plano adequado.",
+        "Na primeira sessão nos conhecemos. Você traz sua história e eu proponho um plano adequado.",
     },
     {
       numero: "03",
-      titulo: "Processo terapeutico",
+      titulo: "Processo terapêutico",
       descricao:
-        "Com frequencia e objetivos definidos, trabalhamos juntos com transparencia, etica e sigilo absoluto.",
+        "Com frequência e objetivos definidos, trabalhamos juntos com transparência, ética e sigilo absoluto.",
     },
   ];
-
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-4xl mx-auto">
