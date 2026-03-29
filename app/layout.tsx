@@ -36,6 +36,11 @@ export const metadata: Metadata = {
     "psicólogo para influenciadores",
     "Curitiba",
   ],
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     locale: "pt_BR",
     type: "website",
