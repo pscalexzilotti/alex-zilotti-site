@@ -25,7 +25,7 @@ export default function ImmersionTeaser() {
         </div>
         <div className="hidden md:flex justify-center items-center">
           <Image
-            src="/images/alex-zilotti-imersao.jpg"
+            src="/images/Design%20sem%20nome%20(3).png"
             alt="Alex Zilotti - Imersão Alta Performance"
             width={560}
             height={420}
