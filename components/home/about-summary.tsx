@@ -13,7 +13,7 @@ export default function AboutSummary() {
           </h2>
           <ul className="flex flex-col gap-3 mb-8">
             {[
-              "Psicologo clinico com especializacao em Psicologia Juridica e Forense",
+              "Psicólogo clínico com especialização em Psicologia Jurídica e Forense",
               "Especialista em Terapia Cognitivo-Comportamental (TCC) de Alta Performance",
               "CRP 08/48529 - Conselho Federal de Psicologia",
             ].map((item, i) => (
@@ -24,7 +24,7 @@ export default function AboutSummary() {
             ))}
           </ul>
           <Button variant="outline" size="lg" asChild>
-            <Link href="/sobre">Conhecer minha historia</Link>
+            <Link href="/sobre">Conhecer minha história</Link>
           </Button>
         </div>
       </div>
