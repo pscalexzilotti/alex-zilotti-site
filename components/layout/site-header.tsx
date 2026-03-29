@@ -9,13 +9,13 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-background border-b border-border sticky top-0 z-50">
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo-az.png"
             alt="Alex Zilotti Psicólogo"
-            width={160}
-            height={44}
+            width={200}
+            height={70}
             priority
             style={{ objectFit: "contain" }}
           />
