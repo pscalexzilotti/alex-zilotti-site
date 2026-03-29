@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function ImmersionTeaser() {
@@ -22,7 +23,15 @@ export default function ImmersionTeaser() {
             <Link href="/imersao">Conhecer a Imersão</Link>
           </Button>
         </div>
-        <div className="hidden md:block h-64 bg-[#112240] rounded-sm border border-amber-900/30" />
+        <div className="hidden md:flex justify-center items-center">
+          <Image
+            src="/images/alex-zilotti-imersao.jpg"
+            alt="Alex Zilotti - Imersão Alta Performance"
+            width={560}
+            height={420}
+            className="rounded-sm object-cover shadow-lg border border-amber-900/30"
+          />
+        </div>
       </div>
     </section>
   );
