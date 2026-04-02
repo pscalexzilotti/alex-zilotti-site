@@ -4,33 +4,33 @@ import { Button } from "@/components/ui/button";
 
 export default function ImmersionTeaser() {
   return (
-    <section className="bg-[#0a1628] py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="px-6 py-20 md:py-28">
+      <div className="surface-panel mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 rounded-[1.75rem] px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
         <div>
-          <p className="label-caps mb-4">Experiência Intensiva</p>
-          <h2 className="font-serif text-white text-3xl md:text-4xl mb-4">
+          <div className="mb-5 flex items-center gap-4">
+            <span className="label-caps">Experiência Intensiva</span>
+            <span className="editorial-rule" />
+          </div>
+          <h2 className="max-w-2xl text-ivory">
             Imersão Rotas de Alta Performance Emocional
           </h2>
-          <p className="text-gray-300 text-base leading-relaxed mb-8">
-            3 dias em hotel de alto padrão para pausar, olhar para a própria
-            vida com profundidade e redesenhar sua rota com clareza.
+          <p className="mt-5 max-w-xl text-base leading-8 text-quiet">
+            Três dias em hotel de alto padrão para pausar, observar com profundidade e reorganizar a própria rota com clareza psicológica e critério.
           </p>
-          <Button
-            size="lg"
-            asChild
-            className="bg-amber-600 hover:bg-amber-700 text-white border-0"
-          >
+          <Button size="lg" asChild variant="primary" className="mt-8">
             <Link href="/imersao">Conhecer a Imersão</Link>
           </Button>
         </div>
-        <div className="hidden md:flex justify-center items-center">
-          <Image
-            src="/images/Design%20sem%20nome%20(3).png"
-            alt="Alex Zilotti - Imersão Alta Performance"
-            width={560}
-            height={420}
-            className="rounded-sm object-cover shadow-lg border border-amber-900/30"
-          />
+        <div className="hidden justify-center md:flex">
+          <div className="overflow-hidden rounded-[1.4rem] border border-white/10">
+            <Image
+              src="/images/Design%20sem%20nome%20(3).png"
+              alt="Alex Zilotti - Imersão Alta Performance"
+              width={560}
+              height={420}
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
