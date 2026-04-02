@@ -6,14 +6,17 @@ import { Gavel, Brain, Sparkles } from "lucide-react";
 const services = [
   {
     icon: <Gavel size={20} strokeWidth={1.6} />,
-    title: "Psicologia Jurídica e Forense",
-    subtitle: "Suporte psicológico para quem enfrenta o sistema de justiça.",
+    title: "Assistente Técnico em Psicologia Jurídica",
+    subtitle:
+      "Suporte técnico para advogados em processos com prova psicológica.",
     bullets: [
-      "Acompanhamento em processos de família, cíveis, trabalhistas ou penais.",
-      "Preparação emocional para audiências e depoimentos.",
-      "Apoio em conflitos familiares e empresariais com base em Psicologia Jurídica e Mediação de Conflitos.",
+      "Análise crítica de laudos e pareceres psicológicos juntados aos autos.",
+      "Identificação de falhas metodológicas, técnicas ou éticas em perícias.",
+      "Formulação de quesitos para perícia psicológica.",
+      "Elaboração de parecer técnico psicológico, quando cabível.",
+      "Esclarecimentos sobre fenômenos psicolegais relevantes ao caso.",
     ],
-    href: "/servicos#juridica",
+    href: "/servicos#assistente-perito",
   },
   {
     icon: <Brain size={20} strokeWidth={1.6} />,
@@ -46,27 +49,39 @@ export default function HowIHelpSection() {
         title="Como posso ajudar"
         subtitle="Três frentes de atuação integradas por método, reserva técnica e leitura precisa do contexto humano."
       />
+
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {services.map((s, i) => (
+        {services.map((service, index) => (
           <div
-            key={i}
+            key={index}
             className="surface-panel flex h-full flex-col gap-5 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.045]"
           >
-            <div className="text-accent">{s.icon}</div>
+            <div className="text-accent">{service.icon}</div>
+
             <div>
-              <h3 className="mb-2 text-[1.25rem] text-ivory">{s.title}</h3>
-              <p className="mb-4 text-sm uppercase tracking-[0.12em] text-taupe">{s.subtitle}</p>
+              <h3 className="mb-2 text-[1.25rem] text-ivory">
+                {service.title}
+              </h3>
+
+              <p className="mb-4 text-sm uppercase tracking-[0.12em] text-taupe">
+                {service.subtitle}
+              </p>
+
               <ul className="flex flex-col gap-3">
-                {s.bullets.map((b, j) => (
-                  <li key={j} className="flex gap-3 text-sm leading-7 text-quiet">
-                    <span className="mt-3 h-1 w-1 rounded-full bg-accent" />
-                    <span>{b}</span>
+                {service.bullets.map((bullet, bulletIndex) => (
+                  <li
+                    key={bulletIndex}
+                    className="flex items-start gap-3 text-sm leading-relaxed text-taupe"
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                    <span>{bullet}</span>
                   </li>
                 ))}
               </ul>
             </div>
+
             <Link
-              href={s.href}
+              href={service.href}
               className="mt-auto inline-flex items-center text-sm font-medium tracking-[0.04em] text-accent transition-colors hover:text-[#a79372]"
             >
               Ver detalhes
