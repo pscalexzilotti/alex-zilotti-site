@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 interface SectionProps {
@@ -14,13 +14,13 @@ export function Section({ children, className, muted, dark, id }: SectionProps) 
     <section
       id={id}
       className={cn(
-        "w-full py-20 px-6",
-        muted && "bg-muted",
-        dark && "bg-primary",
+        "section-shell w-full px-6 py-20 md:py-28 lg:py-32",
+        muted && "bg-white/[0.02]",
+        dark && "bg-white/[0.01]",
         className
       )}
     >
-      <div className="max-w-5xl mx-auto">{children}</div>
+      <div className="mx-auto max-w-6xl">{children}</div>
     </section>
   );
 }
