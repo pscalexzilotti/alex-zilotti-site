@@ -8,9 +8,9 @@ import AboutSummary from "@/components/home/about-summary";
 import SessionsHowItWorks from "@/components/home/sessions-how-it-works";
 
 export const metadata: Metadata = {
-  title: "Alex Zilotti | Psicólogo Jurídico e Alta Performance",
+  title: "Alex Zilotti | Psicólogo Assistente Técnico em Psicologia Jurídica – Curitiba",
   description:
-    "Psicologia Jurídica, TCC de Alta Performance e Hipnose clínica como recurso auxiliar. CRP 08/48529.",
+    "Assistente Técnico em Psicologia Jurídica para advogados e escritórios. Análise de laudos, parecer técnico psicológico, formulação de quesitos e acompanhamento de perícias. CRP 08/48529.",
 };
 
 export default function HomePage() {
