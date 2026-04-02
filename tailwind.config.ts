@@ -9,34 +9,54 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        border: "hsl(var(--border))",
+        ring: "hsl(var(--ring))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
         primary: {
-          DEFAULT: "#1a1a1a",
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         accent: {
-          DEFAULT: "#c9a84c",
-          foreground: "#1a1a1a",
-        },
-        background: "#f9f7f4",
-        foreground: "#1a1a1a",
-        card: {
-          DEFAULT: "#ffffff",
-          foreground: "#1a1a1a",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         muted: {
-          DEFAULT: "#f4f1ec",
-          foreground: "#6b6660",
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
-        border: "#e5e0d8",
+        luxury: {
+          deep: "#0b0c0d",
+          graphite: "#1c1f21",
+          ivory: "#f4f2ee",
+          offwhite: "#efece6",
+          taupe: "#b9b2a7",
+          bronze: "#8c7a5b",
+        },
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         serif: ["var(--font-playfair)", "Georgia", "serif"],
       },
       borderRadius: {
-        sm: "2px",
-        DEFAULT: "4px",
-        lg: "8px",
+        sm: "0.375rem",
+        DEFAULT: "0.5rem",
+        lg: "0.875rem",
+        xl: "1.25rem",
+      },
+      boxShadow: {
+        soft: "0 18px 50px rgba(0,0,0,0.22)",
+        luxe: "0 24px 80px rgba(0,0,0,0.34)",
+      },
+      maxWidth: {
+        prosewide: "72ch",
+      },
+      letterSpacing: {
+        editorial: "0.18em",
       },
     },
   },
