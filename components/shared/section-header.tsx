@@ -7,12 +7,31 @@ interface SectionHeaderProps {
   className?: string;
 }
 
-export function SectionHeader({ title, subtitle, centered, className }: SectionHeaderProps) {
+export function SectionHeader({
+  title,
+  subtitle,
+  centered,
+  className,
+}: SectionHeaderProps) {
   return (
-    <div className={cn('mb-12', centered && 'text-center', className)}>
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{title}</h2>
+    <div className={cn("mb-14 md:mb-16", centered && "text-center", className)}>
+      <div
+        className={cn(
+          "mb-5 flex items-center gap-4",
+          centered && "justify-center"
+        )}
+      >
+        <span className="label-caps">Atendimento Premium</span>
+        <span className="editorial-rule" />
+      </div>
+      <h2 className="max-w-3xl text-4xl md:text-5xl text-ivory">{title}</h2>
       {subtitle && (
-        <p className="text-lg text-slate-600 max-w-2xl" style={centered ? { margin: '0 auto' } : {}}>{subtitle}</p>
+        <p
+          className="mt-5 max-w-2xl text-base leading-8 text-quiet md:text-lg"
+          style={centered ? { margin: "1.25rem auto 0" } : {}}
+        >
+          {subtitle}
+        </p>
       )}
     </div>
   );
