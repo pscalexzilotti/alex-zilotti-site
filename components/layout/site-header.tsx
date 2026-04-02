@@ -7,30 +7,38 @@ import MainNav from "./main-nav";
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="w-full bg-background border-b border-border sticky top-0 z-50">
-      <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-        <Link href="/">
+    <header className="sticky top-0 z-50 w-full border-b border-white/8 bg-[rgba(11,12,13,0.82)] backdrop-blur-xl">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link href="/" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-az.png"
             alt="Alex Zilotti Psicólogo"
-            style={{ height: "48px", width: "auto", display: "block", objectFit: "contain", objectPosition: "top" }}
+            style={{
+              height: "46px",
+              width: "auto",
+              display: "block",
+              objectFit: "contain",
+              objectPosition: "top",
+            }}
           />
         </Link>
         <div className="hidden md:flex">
           <MainNav />
         </div>
         <button
-          className="md:hidden p-2 text-foreground"
+          className="rounded-full border border-white/10 p-2.5 text-foreground transition-colors hover:bg-white/5 md:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-background border-t border-border px-6 py-6">
-          <MainNav />
+        <div className="border-t border-white/8 bg-[rgba(18,19,20,0.96)] px-6 py-6 md:hidden">
+          <nav className="flex flex-col gap-5">
+            <MainNav />
+          </nav>
         </div>
       )}
     </header>
