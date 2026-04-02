@@ -7,92 +7,74 @@ export default function LegalAssistantSection() {
   return (
     <Section muted id="assistente-perito">
       <SectionHeader
-        title="Assistente Técnico em Psicologia Jurídica para Advogados"
-        subtitle="Atuação técnica voltada à análise crítica de elementos psicológicos relevantes ao processo, com rigor metodológico, clareza interpretativa e responsabilidade ética."
+        title="Assistente Técnico em Psicologia Jurídica"
+        subtitle="Suporte técnico especializado para advogados e escritórios em processos que envolvem prova psicológica, laudo pericial e questões psicolegais."
       />
+
       <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-6">
-          <p className="text-base leading-8 text-quiet">
-            Na interface entre Psicologia e Direito, a leitura de laudos,
-            avaliações e fenômenos psicolegais exige precisão técnica. A
-            atuação como Assistente Técnico em Psicologia Jurídica oferece
-            suporte especializado a advogados e escritórios em demandas que
-            envolvem prova psicológica, controvérsias metodológicas e elevada
-            sensibilidade humana. O trabalho é conduzido com base científica,
-            critério técnico e responsabilidade ética, contribuindo para uma
-            compreensão mais qualificada dos elementos psicológicos relevantes
-            ao caso.
-          </p>
+        <div className="space-y-8">
+
+          <div>
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-taupe">
+              O que é essa atuação
+            </h3>
+            <p className="text-sm leading-7 text-quiet">
+              O assistente técnico em Psicologia atua ao lado do advogado na análise de
+              elementos psicológicos relevantes ao processo. Sua função é técnica: examinar
+              laudos, apontar fragilidades metodológicas, formular quesitos e, quando
+              cabível, elaborar parecer técnico psicológico. Atua com base científica,
+              critério profissional e responsabilidade ética.
+            </p>
+          </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-taupe">
-                Frentes de atuação
+                Atuação técnica possível
               </h3>
               <ul className="space-y-2.5 text-sm leading-7 text-quiet">
-                <li>• Análise crítica de laudos e pareceres psicológicos.</li>
-                <li>
-                  • Identificação de fragilidades técnicas, metodológicas ou
-                  éticas em documentos psicológicos.
-                </li>
-                <li>• Apoio na formulação de quesitos em perícias psicológicas.</li>
-                <li>• Elaboração de parecer técnico psicológico, quando cabível.</li>
-                <li>• Acompanhamento técnico de perícias e entrevistas.</li>
-                <li>
-                  • Esclarecimentos sobre conceitos e fenômenos psicolegais.
-                </li>
-                <li>
-                  • Apoio técnico em processos com alta complexidade emocional.
-                </li>
+                >• Análise crítica de laudo psicológico pericial.</li>
+                >• Identificação de falhas técnicas, metodológicas ou éticas.</li>
+                >• Formulação de quesitos para perícia psicológica.</li>
+                >• Elaboração de parecer técnico psicológico.</li>
+                >• Acompanhamento técnico de perícia judicial.</li>
+                >• Esclarecimentos sobre conceitos psicolegais nos autos.</li>
+                >• Apoio em processos de família, guarda, interdição e criminal.</li>
               </ul>
             </div>
+
             <div>
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-taupe">
-                Benefícios ao advogado
+                O que isso oferece ao advogado
               </h3>
               <ul className="space-y-2.5 text-sm leading-7 text-quiet">
-                <li>
-                  • Maior clareza interpretativa sobre material psicológico
-                  constante dos autos.
-                </li>
-                <li>
-                  • Apoio técnico à leitura da prova psicológica apresentada no
-                  processo.
-                </li>
-                <li>
-                  • Qualificação do diálogo entre Psicologia e estratégia
-                  jurídica.
-                </li>
-                <li>
-                  • Redução de leituras superficiais ou equivocadas de elementos
-                  técnicos.
-                </li>
-                <li>
-                  • Maior consistência na argumentação quando há questões
-                  psicolegais em discussão.
-                </li>
+                >• Leitura técnica qualificada da prova psicológica nos autos.</li>
+                >• Subsídios para contestar ou complementar laudo do perito oficial.</li>
+                >• Quesitos mais precisos e tecnicamente fundamentados.</li>
+                >• Melhor compreensão de fenômenos psicolegais na instrução.</li>
+                >• Argumentação mais consistente em questões de natureza psicológica.</li>
               </ul>
             </div>
           </div>
+
         </div>
 
         <aside className="surface-panel flex h-full flex-col justify-between rounded-2xl p-6 md:p-8">
           <div className="space-y-4">
             <h3 className="text-lg text-ivory">
-              Escopo e limites éticos da atuação
+              Limites e posicionamento ético
             </h3>
             <p className="text-sm leading-7 text-quiet">
-              A atuação como Assistente Técnico em Psicologia Jurídica é
-              estritamente técnica e ética. Não substitui o perito nomeado pelo
-              juízo, não se confunde com defesa processual e não implica
-              promessa de desfecho favorável. O compromisso é com método,
-              ciência psicológica e responsabilidade profissional.
+              O assistente técnico não substitui o perito nomeado pelo juízo. Não atua
+              como defensor cego da parte, não promete desfecho processual e não emite
+              diagnóstico à distância. O trabalho é pautado em método, ciência e ética
+              profissional — em conformidade com o Código de Ética do Psicólogo e as
+              Resoluções do CFP.
             </p>
             <p className="text-sm leading-7 text-quiet">
-              O objetivo é qualificar a compreensão dos elementos psicológicos
-              envolvidos no caso, oferecendo subsídios técnicos para que a
-              estratégia jurídica seja construída com maior lucidez quanto aos
-              limites e possibilidades da prova psicológica.
+              O objetivo é qualificar a leitura do material psicológico disponível nos
+              autos, oferecendo ao advogado maior clareza técnica para conduzir a
+              estratégia processual com segurança.
             </p>
           </div>
           <div className="mt-6">
