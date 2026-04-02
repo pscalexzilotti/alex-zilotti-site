@@ -116,12 +116,56 @@ export default function ServicosPage() {
             </div>
           ))}
         </div>
+
         <p className="text-xs text-muted-foreground mt-12 border-t border-border pt-6">
           Todos os serviços seguem o Código de Ética Profissional do Psicólogo e as Resoluções do
           Conselho Federal de Psicologia. Este site tem caráter informativo e não realiza
           diagnósticos à distância ou promessas de resultado.
         </p>
       </Section>
+
+      <section
+        id="assistente-perito"
+        className="section-shell w-full px-6 py-16 md:py-20"
+      >
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-4 text-3xl md:text-4xl text-ivory">
+            Assistente Técnico em Psicologia Jurídica
+          </h2>
+          <p className="mb-8 text-base leading-8 text-quiet">
+            Atuação focada em suporte técnico a advogados e escritórios em casos que
+            envolvem prova psicológica, laudos, pareceres e controvérsias
+            metodológicas, preservando rigor científico e responsabilidade ética.
+          </p>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-taupe">
+                O que faço como assistente técnico
+              </h3>
+              <ul className="space-y-2.5 text-sm leading-7 text-quiet">
+                <li>• Analisar criticamente laudos e documentos psicológicos.</li>
+                <li>• Indicar eventuais fragilidades técnicas, metodológicas ou éticas.</li>
+                <li>• Auxiliar na elaboração de quesitos direcionados.</li>
+                <li>• Produzir parecer técnico psicológico, quando aplicável.</li>
+                <li>• Acompanhar tecnicamente perícias e entrevistas.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-taupe">
+                O que não é essa atuação
+              </h3>
+              <ul className="space-y-2.5 text-sm leading-7 text-quiet">
+                <li>• Não substitui o perito nomeado pelo juízo.</li>
+                <li>• Não configura promessa de êxito ou de desfecho específico.</li>
+                <li>• Não se confunde com atendimento psicoterapêutico.</li>
+                <li>• Não é defesa cega, mas análise técnica pautada em critérios científicos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Section muted>
         <div className="text-center max-w-xl mx-auto">
