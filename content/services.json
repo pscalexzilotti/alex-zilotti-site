@@ -19,6 +19,31 @@
       "modality": "Presencial"
     },
     {
+      "id": "assistente-perito-psicologia-juridica",
+      "icon": "📑",
+      "title": "Assistente Técnico em Psicologia Jurídica",
+      "description": "Suporte técnico em Psicologia Jurídica para leitura crítica de laudos, pareceres e elementos psicolegais em processos sensíveis.",
+      "details": "Atuação voltada a advogados e escritórios em demandas que envolvem prova psicológica, análise metodológica, formulação de quesitos, parecer técnico psicológico e acompanhamento técnico de perícias, sempre com responsabilidade ética e sem promessa de resultado processual.",
+      "duration": "Conforme demanda",
+      "modality": "Presencial e Online",
+      "audience": "Advogados e escritórios que atuam em casos com prova psicológica.",
+      "highlights": [
+        "Análise crítica de laudos e pareceres psicológicos",
+        "Apoio na formulação de quesitos",
+        "Elaboração de parecer técnico psicológico, quando cabível",
+        "Acompanhamento técnico de perícias"
+      ],
+      "seo": {
+        "keywords": [
+          "Assistente Perito em Psicologia Jurídica",
+          "Assistente Técnico em Psicologia Jurídica",
+          "Psicologia Jurídica para Advogados",
+          "Parecer técnico psicológico",
+          "Análise de laudo psicológico"
+        ]
+      }
+    },
+    {
       "id": "coaching-alta-performance",
       "icon": "🚀",
       "title": "Coaching de Alta Performance",
