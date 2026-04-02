@@ -3,6 +3,7 @@ import Hero from "@/components/home/hero";
 import ForWhomSection from "@/components/home/for-whom-section";
 import HowIHelpSection from "@/components/home/how-i-help-section";
 import ImmersionTeaser from "@/components/home/immersion-teaser";
+import LegalAssistantSection from "@/components/home/legal-assistant-section";
 import AboutSummary from "@/components/home/about-summary";
 import SessionsHowItWorks from "@/components/home/sessions-how-it-works";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ForWhomSection />
       <HowIHelpSection />
       <ImmersionTeaser />
+      <LegalAssistantSection />
       <AboutSummary />
       <SessionsHowItWorks />
     </>
