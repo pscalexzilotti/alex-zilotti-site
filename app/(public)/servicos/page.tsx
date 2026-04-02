@@ -7,9 +7,9 @@ import { WHATSAPP_URL } from "@/lib/utils";
 import { Gavel, Brain, Sparkles, Compass, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Serviços | Alex Zilotti Psicólogo",
+  title: "Serviços | Assistente Técnico em Psicologia Jurídica – Alex Zilotti",
   description:
-    "Psicologia Jurídica, TCC de Alta Performance, Hipnose clínica como recurso auxiliar, Imersões e Desenvolvimento para líderes. CRP 08/48529.",
+    "Assistente Técnico em Psicologia Jurídica para advogados: análise de laudo psicológico, parecer técnico, formulação de quesitos e acompanhamento de perícia. TCC de Alta Performance e Hipnose clínica. CRP 08/48529.",
 };
 
 const services = [
@@ -18,11 +18,11 @@ const services = [
     icon: <Gavel size={32} />,
     title: "Psicologia Jurídica e Forense",
     subtitle: "Suporte psicológico para quem enfrenta o sistema de justiça.",
-    text: "Atendimento especializado para pessoas envolvidas em processos judiciais e conflitos intensos. O foco é cuidar da sua saúde mental, organizar pensamentos e ajudá-lo a atravessar o processo com mais estabilidade emocional.",
+    text: "Atendimento especializado para pessoas envolvidas em processos judiciais e conflitos intensos. O foco é cuidar da saúde mental, organizar pensamentos e atravessar o processo com estabilidade emocional.",
     bullets: [
       "Acompanhamento em processos de família, cíveis, trabalhistas ou penais.",
       "Preparação emocional para audiências, depoimentos e negociações.",
-      "Apoio em conflitos familiares e empresariais, com base em Psicologia Jurídica, Mediação de Conflitos e Saúde Mental e Direito.",
+      "Apoio em conflitos familiares e empresariais com base em Psicologia Jurídica e Mediação de Conflitos.",
       "Atuação sem promessas de ganho de causa, em conformidade com o Código de Ética do Psicólogo.",
     ],
   },
@@ -31,11 +31,7 @@ const services = [
     icon: <Brain size={32} />,
     title: "Clínica Cognitiva de Alta Performance",
     subtitle: "TCC para quem vive decisões de alto impacto.",
-    text: "Terapia Cognitivo-Comportamental desenhada para empresários, influenciadores, artistas e executivos que lidam com metas, riscos, exposição e decisões difíceis. Trabalhamos pensamentos, emoções e comportamentos para que você sustente resultados sem se quebrar por dentro.",
-    bullets: [
-      "Ansiedade de performance, crises de pânico, depressão, autossabotagem.",
-      "Conflitos de relacionamento que impactam negócios, imagem e decisões.",
-      "TCC aplicada a ansiedade, depressão, TDAH, TOC, fobias, transtornos alimentares, personalidade, casal, família, crianças e adolescentes.",
+    text: "Terapia Cognitivo-Comportamental para empresários, transtornos alimentares, personalidade, casal, família, crianças e adolescentes.",
       "Planos individualizados, sem promessas de cura em tempo determinado.",
     ],
   },
