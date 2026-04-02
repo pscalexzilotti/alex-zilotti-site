@@ -5,7 +5,7 @@ import { Gavel, Brain, Sparkles } from "lucide-react";
 
 const services = [
   {
-    icon: <Gavel size={28} />,
+    icon: <Gavel size={20} strokeWidth={1.6} />,
     title: "Psicologia Jurídica e Forense",
     subtitle: "Suporte psicológico para quem enfrenta o sistema de justiça.",
     bullets: [
@@ -16,7 +16,7 @@ const services = [
     href: "/servicos#juridica",
   },
   {
-    icon: <Brain size={28} />,
+    icon: <Brain size={20} strokeWidth={1.6} />,
     title: "Clínica Cognitiva de Alta Performance",
     subtitle: "TCC para quem vive decisões de alto impacto.",
     bullets: [
@@ -27,7 +27,7 @@ const services = [
     href: "/servicos#clinica",
   },
   {
-    icon: <Sparkles size={28} />,
+    icon: <Sparkles size={20} strokeWidth={1.6} />,
     title: "Hipnose clínica (recurso auxiliar)",
     subtitle: "Recurso técnico, com critério, ética e seu consentimento.",
     bullets: [
@@ -41,34 +41,35 @@ const services = [
 
 export default function HowIHelpSection() {
   return (
-    <Section>
+    <Section className="bg-transparent">
       <SectionHeader
         title="Como posso ajudar"
-        subtitle="Três pilares para sustentar mente, decisões e resultados."
+        subtitle="Três frentes de atuação integradas por método, reserva técnica e leitura precisa do contexto humano."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {services.map((s, i) => (
           <div
             key={i}
-            className="bg-card border border-accent/30 rounded-sm p-7 shadow-sm flex flex-col gap-4 hover:border-accent transition-colors"
+            className="surface-panel flex h-full flex-col gap-5 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.045]"
           >
             <div className="text-accent">{s.icon}</div>
             <div>
-              <h3 className="font-serif text-lg text-primary mb-1">{s.title}</h3>
-              <p className="text-xs text-muted-foreground mb-3">{s.subtitle}</p>
-              <ul className="flex flex-col gap-2">
+              <h3 className="mb-2 text-[1.25rem] text-ivory">{s.title}</h3>
+              <p className="mb-4 text-sm uppercase tracking-[0.12em] text-taupe">{s.subtitle}</p>
+              <ul className="flex flex-col gap-3">
                 {s.bullets.map((b, j) => (
-                  <li key={j} className="text-sm text-foreground flex gap-2">
-                    <span className="text-accent mt-1">•</span> {b}
+                  <li key={j} className="flex gap-3 text-sm leading-7 text-quiet">
+                    <span className="mt-3 h-1 w-1 rounded-full bg-accent" />
+                    <span>{b}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <Link
               href={s.href}
-              className="text-xs text-accent hover:underline mt-auto pt-2 font-medium"
+              className="mt-auto inline-flex items-center text-sm font-medium tracking-[0.04em] text-accent transition-colors hover:text-[#a79372]"
             >
-              Ver detalhes →
+              Ver detalhes
             </Link>
           </div>
         ))}
