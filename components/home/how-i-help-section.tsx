@@ -6,14 +6,16 @@ import { Gavel, Brain, Sparkles } from "lucide-react";
 const services = [
   {
     icon: <Gavel size={20} strokeWidth={1.6} />,
-    title: "Psicologia Jurídica e Forense",
-    subtitle: "Suporte psicológico para quem enfrenta o sistema de justiça.",
+    title: "Assistente Técnico em Psicologia Jurídica",
+    subtitle: "Suporte técnico para advogados em processos com prova psicológica.",
     bullets: [
-      "Acompanhamento em processos de família, cíveis, trabalhistas ou penais.",
-      "Preparação emocional para audiências e depoimentos.",
-      "Apoio em conflitos familiares e empresariais com base em Psicologia Jurídica e Mediação de Conflitos.",
+      "Análise crítica de laudos e pareceres psicológicos juntados aos autos.",
+      "Identificação de falhas metodológicas, técnicas ou éticas em perícias.",
+      "Formulação de quesitos para perícia psicológica.",
+      "Elaboração de parecer técnico psicológico, quando cabível.",
+      "Esclarecimentos sobre fenômenos psicolegais relevantes ao caso.",
     ],
-    href: "/servicos#juridica",
+    href: "/servicos#assistente-perito",
   },
   {
     icon: <Brain size={20} strokeWidth={1.6} />,
@@ -58,7 +60,7 @@ export default function HowIHelpSection() {
               <p className="mb-4 text-sm uppercase tracking-[0.12em] text-taupe">{s.subtitle}</p>
               <ul className="flex flex-col gap-3">
                 {s.bullets.map((b, j) => (
-                  <li key={j} className="flex gap-3 text-sm leading-7 text-quiet">
+                  >
                     <span className="mt-3 h-1 w-1 rounded-full bg-accent" />
                     <span>{b}</span>
                   </li>
