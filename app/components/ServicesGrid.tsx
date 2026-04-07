@@ -14,8 +14,8 @@ const services = [
   },
   {
     n: "02",
-    tag: "Jurídico / Forense",
-    title: "Psicologia Jurídica e Forense",
+        tag: "Clínica Jurídico / Forense",
+        title: "Psicologia Clínica Jurídica e Forense",
     body: "Suporte psicológico especializado para pessoas envolvidas em processos judiciais, disputas familiares, avaliações periciais e situações de exposição legal de alta complexidade.",
     bullets: [
       "Processos judiciais sensíveis",
