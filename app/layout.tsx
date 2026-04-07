@@ -1,37 +1,29 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
-  variable: "--font-display",
+  variable: "--font-playfair",
   display: "swap",
 });
 
-const jost = Jost({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Alex Zilotti | Psicologia, Jur\u00eddico & Desenvolvimento Humano",
+  title: "Alex Zilotti | Psicólogo — Alta Performance, Jurídico & Empresas",
   description:
-    "Psic\u00f3logo (CRP 08/48529) especializado em alta performance, psicologia jur\u00eddica e consultoria de desenvolvimento humano para empresas. Rigor t\u00e9cnico, sigilo absoluto.",
-  keywords: [
-    "psic\u00f3logo executivos",
-    "psicologia jur\u00eddica",
-    "desenvolvimento humano empresas",
-    "psicoterapia alta performance",
-    "Alex Zilotti CRP 08/48529",
-  ],
+    "Psicólogo CRP 08/48529. Atendimento clínico de alta performance, psicologia jurídica e desenvolvimento humano para empresas. Curitiba/PR.",
   openGraph: {
-    title: "Alex Zilotti | Psicologia, Jur\u00eddico & Desenvolvimento Humano",
-    description:
-      "Atendo quem vive sob press\u00e3o constante: executivos, profissionais do direito e pessoas em conflitos de alta complexidade.",
+    title: "Alex Zilotti | Psicólogo",
+    description: "Alta performance, psicologia jurídica e desenvolvimento humano para empresas.",
     locale: "pt_BR",
     type: "website",
   },
@@ -39,23 +31,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${jost.variable}`}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-      </head>
-      <body
-        style={{
-          fontFamily: "var(--sans, 'Jost', system-ui, sans-serif)",
-          background: "var(--ink)",
-          color: "var(--ivory)",
-        }}
-      >
-        {children}
-      </body>
+    <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
