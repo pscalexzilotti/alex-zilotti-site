@@ -63,7 +63,7 @@ export default function ConsultoriaEmpresasSection() {
                 color: "var(--color-text)",
               }}
             >
-              Psicologia aplicada
+                          Psicologia Organizacional aplicada
               <br />
               <em style={{ fontStyle: "italic", color: "var(--color-gold-light)" }}>ao ambiente corporativo</em>
             </h2>
@@ -76,9 +76,9 @@ export default function ConsultoriaEmpresasSection() {
                 lineHeight: 1.9,
               }}
             >
-              Empresas de alta performance enfrentam desafios humanos complexos.
-              Ofereço consultoria especializada para organizações que entendem
-              que o capital humano é seu ativo mais estratégico.
+                          Com +15 anos de experiência em contexto organizacional de multinacionais
+                          como Vale, Petrobras, XP Investimentos e em Portugal, ofereço
+                          consultoria especializada para organizações que valorizam o capital humano.
             </p>
           </div>
         </div>
