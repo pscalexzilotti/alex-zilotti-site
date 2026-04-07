@@ -1,26 +1,26 @@
 const services = [
   {
     n: "01",
-    tag: "Cl\u00ednica Premium",
-    title: "Cl\u00ednica Cognitiva de Alta Performance",
-    body: "Psicoterapia baseada em TCC para quem vive sob press\u00e3o constante, exposi\u00e7\u00e3o p\u00fablica e decis\u00f5es de alto impacto. Um processo cl\u00ednico constru\u00eddo com a mesma exig\u00eancia que voc\u00ea aplica \u00e0 sua vida.",
+    tag: "Clínica Premium",
+    title: "Clínica Cognitiva de Alta Performance",
+    body: "Psicoterapia baseada em TCC para quem vive sob pressão constante, exposição pública e decisões de alto impacto. Um processo clínico construído com a mesma exigência que você aplica à sua vida.",
     bullets: [
       "Terapia Cognitivo-Comportamental especializada",
-      "Regula\u00e7\u00e3o emocional sob press\u00e3o extrema",
-      "Tomada de decis\u00e3o em contextos cr\u00edticos",
+      "Regulação emocional sob pressão extrema",
+      "Tomada de decisão em contextos críticos",
       "Atendimento presencial e online",
     ],
   },
   {
     n: "02",
-    tag: "Jur\u00eddico / Forense",
-    title: "Psicologia Jur\u00eddica e Forense",
-    body: "Suporte psicol\u00f3gico especializado para pessoas envolvidas em processos judiciais, disputas familiares, avalia\u00e7\u00f5es periciais e situa\u00e7\u00f5es de exposi\u00e7\u00e3o legal de alta complexidade.",
+    tag: "Jurídico / Forense",
+    title: "Psicologia Jurídica e Forense",
+    body: "Suporte psicológico especializado para pessoas envolvidas em processos judiciais, disputas familiares, avaliações periciais e situações de exposição legal de alta complexidade.",
     bullets: [
-      "Processos judiciais sens\u00edveis",
-      "Disputas familiares e aliena\u00e7\u00e3o parental",
-      "Avalia\u00e7\u00e3o psicol\u00f3gica forense",
-      "Suporte emocional em lit\u00edgios",
+      "Processos judiciais sensíveis",
+      "Disputas familiares e alienação parental",
+      "Avaliação psicológica forense",
+      "Suporte emocional em litígios",
     ],
   },
 ];
@@ -29,48 +29,38 @@ export default function ServicesGrid() {
   return (
     <section
       style={{
-        background: "var(--charcoal)",
+        background: "var(--color-bg-alt)",
         padding: "128px 64px",
       }}
       className="services-section"
     >
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         {/* Label */}
-        <div
+        <p
           style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 13,
+            fontSize: "0.62rem",
+            letterSpacing: "0.22em",
+            textTransform: "uppercase",
+            color: "var(--color-gold)",
+            fontWeight: 400,
             marginBottom: 20,
           }}
         >
-          <span style={{ width: 22, height: 1, background: "var(--gdim)", display: "inline-block" }} />
-          <p
-            style={{
-              fontSize: "0.52rem",
-              letterSpacing: "0.38em",
-              textTransform: "uppercase",
-              color: "var(--gold)",
-              fontWeight: 400,
-            }}
-          >
-            \u00c1reas de Atua\u00e7\u00e3o
-          </p>
-        </div>
-
+          Áreas de Atuação
+        </p>
         <h2
           style={{
-            fontFamily: "var(--serif)",
-            fontSize: "clamp(1.9rem, 3.6vw, 3.2rem)",
+            fontFamily: "var(--font-display)",
+            fontSize: "clamp(1.9rem, 3.5vw, 2.8rem)",
             fontWeight: 300,
-            lineHeight: 1.14,
-            color: "var(--warm)",
-            letterSpacing: "-0.01em",
-            marginBottom: 68,
+            lineHeight: 1.15,
+            color: "var(--color-text)",
+            marginBottom: 72,
+            maxWidth: 520,
           }}
         >
           Psicologia praticada com{" "}
-          <em style={{ fontStyle: "italic", color: "var(--glt)" }}>rigor e profundidade</em>
+          <em style={{ fontStyle: "italic", color: "var(--color-gold-light)" }}>rigor e profundidade</em>
         </h2>
 
         {/* Grid de cards */}
@@ -78,8 +68,7 @@ export default function ServicesGrid() {
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            gap: 2,
-            background: "rgba(154,128,96,0.07)",
+            gap: "2px",
           }}
           className="svc-grid-inner"
         >
@@ -87,84 +76,73 @@ export default function ServicesGrid() {
             <div
               key={svc.n}
               style={{
-                background: "var(--charcoal)",
-                padding: "58px 50px",
-                position: "relative",
-                overflow: "hidden",
-                transition: "background 0.5s",
+                background: "var(--color-surface)",
+                padding: "52px 48px",
+                cursor: "default",
+                transition: "background 0.3s",
               }}
-              onMouseEnter={e => (e.currentTarget.style.background = "var(--graphite)")}
-              onMouseLeave={e => (e.currentTarget.style.background = "var(--charcoal)")}
+              onMouseEnter={e => (e.currentTarget.style.background = "var(--color-border)")}
+              onMouseLeave={e => (e.currentTarget.style.background = "var(--color-surface)")}
             >
               <span
                 style={{
-                  fontFamily: "var(--serif)",
-                  fontSize: "0.7rem",
-                  letterSpacing: "0.2em",
-                  color: "var(--gdim)",
-                  marginBottom: 26,
                   display: "block",
+                  fontFamily: "var(--font-display)",
+                  fontSize: "0.6rem",
+                  letterSpacing: "0.18em",
+                  color: "var(--color-gold)",
+                  marginBottom: 32,
                 }}
               >
                 {svc.n}
               </span>
-
               {/* Tag */}
-              <span
+              <p
                 style={{
-                  position: "absolute",
-                  top: 26,
-                  right: 26,
-                  fontSize: "0.46rem",
-                  letterSpacing: "0.25em",
+                  fontSize: "0.62rem",
+                  letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "var(--gold)",
-                  border: "1px solid rgba(154,128,96,0.18)",
-                  padding: "6px 12px",
-                  fontWeight: 400,
+                  color: "var(--color-muted)",
+                  marginBottom: 16,
                 }}
               >
                 {svc.tag}
-              </span>
-
+              </p>
               <h3
                 style={{
-                  fontFamily: "var(--serif)",
-                  fontSize: "clamp(1.15rem, 1.9vw, 1.7rem)",
-                  fontWeight: 300,
-                  color: "var(--warm)",
-                  letterSpacing: "-0.01em",
-                  marginBottom: 16,
+                  fontFamily: "var(--font-display)",
+                  fontSize: "1.45rem",
+                  fontWeight: 400,
+                  color: "var(--color-text)",
+                  marginBottom: 20,
+                  lineHeight: 1.25,
                 }}
               >
                 {svc.title}
               </h3>
-
               <p
                 style={{
-                  fontSize: "0.84rem",
-                  color: "var(--stone)",
-                  lineHeight: 1.9,
-                  marginBottom: 30,
+                  fontSize: "0.85rem",
+                  color: "var(--color-muted)",
+                  lineHeight: 1.82,
+                  marginBottom: 28,
                 }}
               >
                 {svc.body}
               </p>
-
-              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 9 }}>
+              <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: 10 }}>
                 {svc.bullets.map((b) => (
                   <li
                     key={b}
                     style={{
-                      fontSize: "0.69rem",
-                      letterSpacing: "0.05em",
-                      color: "var(--taupe)",
+                      fontSize: "0.78rem",
+                      color: "var(--color-muted)",
                       display: "flex",
-                      alignItems: "center",
-                      gap: 11,
+                      alignItems: "flex-start",
+                      gap: 12,
                     }}
                   >
-                    <span style={{ width: 13, height: 1, background: "var(--gdim)", flexShrink: 0, display: "inline-block" }} />
+                    <span style={{ width: 16, height: 1, background: "var(--color-gold)", marginTop: 10, flexShrink: 0 }} />
                     {b}
                   </li>
                 ))}
