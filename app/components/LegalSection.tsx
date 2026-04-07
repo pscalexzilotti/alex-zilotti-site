@@ -70,9 +70,9 @@ export default function LegalSection() {
                 maxWidth: 400,
               }}
             >
-                                      Formado e com 15 anos de experiência em contexto organizacional de grandes multinacionais.
-                          Atendimento especializado a pessoas envolvidas em processos judiciais,
-                          e suporte técnico especializado para profissionais do Direito.
+                                                  Com mais de 15 anos de trajetória em grandes organizações e multinacionais como Vale,
+                                      Petrobras, XP Investimentos e em Portugal. Atendimento especializado a pessoas
+                                      envolvidas em processos judiciais e suporte técnico para profissionais do Direito.
             </p>
 
             {/* Quote */}
