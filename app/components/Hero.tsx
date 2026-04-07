@@ -164,7 +164,7 @@ export default function Hero() {
         className="hero-right"
       >
         <img
-          src="/hero-retrato.jpg"
+          src="/images/hero.jpg"
           alt="Alex Cristoffer Zilotti"
           style={{
             position: "absolute",
