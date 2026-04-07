@@ -113,7 +113,7 @@ export default function Footer() {
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <a
-                href="https://wa.me/5541999999999"
+                href="https://wa.me/5541991767772"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -121,12 +121,21 @@ export default function Footer() {
                   color: "var(--color-text)",
                   textDecoration: "none",
                   opacity: 0.75,
+                  transition: "opacity 0.2s, color 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLAnchorElement).style.opacity = "1";
+                  (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLAnchorElement).style.opacity = "0.75";
+                  (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
                 }}
               >
                 WhatsApp
               </a>
               <a
-                href="https://instagram.com/alexzilotti"
+                href="https://instagram.com/psicoalexz"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -134,9 +143,18 @@ export default function Footer() {
                   color: "var(--color-text)",
                   textDecoration: "none",
                   opacity: 0.75,
+                  transition: "opacity 0.2s, color 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLAnchorElement).style.opacity = "1";
+                  (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLAnchorElement).style.opacity = "0.75";
+                  (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
                 }}
               >
-                Instagram
+                @psicoalexz
               </a>
             </div>
           </div>
