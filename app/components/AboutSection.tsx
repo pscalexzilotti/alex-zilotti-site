@@ -1,5 +1,4 @@
 "use client";
-
 const credentials = [
   "CRP 08/48529 (ativa e regularizada)",
   "Mestrando em Psicologia Organizacional",
@@ -9,7 +8,6 @@ const credentials = [
   "Formação em Hipnose Clínica",
   "Atendimento presencial em Curitiba/PR e online nacional",
 ];
-
 export default function AboutSection() {
   return (
     <section
@@ -36,11 +34,16 @@ export default function AboutSection() {
             }}
             className="about-img-wrap"
           >
-            <div
+            <img
+              src="/images/sobre.jpg"
+              alt="Alex Cristoffer Zilotti"
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "var(--color-surface)",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
               }}
             />
             {/* Gold accent */}
@@ -52,10 +55,10 @@ export default function AboutSection() {
                 width: 4,
                 height: "40%",
                 background: "var(--color-gold)",
+                zIndex: 1,
               }}
             />
           </div>
-
           {/* Right — texto */}
           <div>
             <p
@@ -70,7 +73,6 @@ export default function AboutSection() {
             >
               Sobre
             </p>
-
             <h2
               style={{
                 fontSize: "clamp(2rem, 4vw, 3.2rem)",
@@ -84,7 +86,6 @@ export default function AboutSection() {
               <br />
               <em style={{ fontStyle: "italic" }}>Zilotti</em>
             </h2>
-
             {/* Descrição mobile */}
             <p
               className="about-body-mobile"
@@ -99,7 +100,6 @@ export default function AboutSection() {
               Investimentos e Portugal. Especializado em psicologia jurídica/forense,
               clínica (TCC) e organizacional.
             </p>
-
             {/* Descrição desktop */}
             <p
               className="about-body-desktop"
@@ -117,7 +117,6 @@ export default function AboutSection() {
               experiência corporativa e precisão jurídica para atender contextos de
               máxima exigência.
             </p>
-
             {/* Credentials */}
             <ul
               style={{
@@ -154,7 +153,6 @@ export default function AboutSection() {
                 </li>
               ))}
             </ul>
-
             {/* CTA */}
             <a
               href="#contato"
@@ -181,7 +179,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-
       <style>{`
         @media (min-width: 1024px) {
           .about-body-desktop { display: block !important; }
