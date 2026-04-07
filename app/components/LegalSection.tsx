@@ -70,9 +70,9 @@ export default function LegalSection() {
                 maxWidth: 400,
               }}
             >
-                          15 anos de experiência com foco em contexto organizacional e jurídico.
-              Atendimento a pessoas envolvidas em processos judiciais e suporte técnico
-              especializado para profissionais do Direito.
+                                      Formado e com 15 anos de experiência em contexto organizacional de grandes multinacionais.
+                          Atendimento especializado a pessoas envolvidas em processos judiciais,
+                          e suporte técnico especializado para profissionais do Direito.
             </p>
 
             {/* Quote */}
