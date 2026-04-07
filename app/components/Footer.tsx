@@ -9,68 +9,184 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="bg-[var(--color-text)] text-[var(--color-text-inverse)] py-16 md:py-20">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-[2fr_1fr_1fr] gap-12 mb-12">
+    <footer style={{ background: "var(--color-bg)", borderTop: "1px solid var(--color-border)" }}>
+      <div
+        className="footer-main"
+        style={{
+          maxWidth: "1100px",
+          margin: "0 auto",
+          padding: "64px 40px 40px",
+        }}
+      >
+        <div
+          className="footer-grid"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 1fr 1fr",
+            gap: "48px",
+            marginBottom: "48px",
+          }}
+        >
+          {/* Brand */}
           <div>
             <p
-              className="font-[family-name:var(--font-display)] font-light mb-2"
-              style={{ fontSize: "var(--text-xl)" }}
+              style={{
+                fontSize: "1.15rem",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                color: "var(--color-gold)",
+                fontFamily: "var(--font-display)",
+                marginBottom: "12px",
+                textTransform: "uppercase",
+              }}
             >
-              Alex Cristoffer Zilotti
+              Alex Zilotti
             </p>
-            <p className="text-sm opacity-60 mb-1">Psicólogo · CRP 08/48529</p>
-            <p className="text-sm opacity-60">Maringá, PR — Presencial e online</p>
+            <p
+              style={{
+                fontSize: "0.82rem",
+                color: "var(--color-muted)",
+                lineHeight: 1.7,
+                maxWidth: "280px",
+              }}
+            >
+              Psicólogo CRP 08/48529. Atendimento clínico de alta performance,
+              psicologia jurídica e desenvolvimento humano para empresas.
+            </p>
           </div>
 
+          {/* Links */}
           <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase opacity-50 mb-4">
+            <p
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                letterSpacing: "0.15em",
+                color: "var(--color-muted)",
+                textTransform: "uppercase",
+                marginBottom: "16px",
+              }}
+            >
               Navegação
             </p>
-            <nav aria-label="Rodapé">
-              <ul className="space-y-2" role="list">
-                {footerLinks.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="text-sm opacity-70 hover:opacity-100 transition-opacity"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-
-          <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase opacity-50 mb-4">
-              Contato
-            </p>
-            <ul className="space-y-2" role="list">
-              <li>
-                <a
-                  href="https://www.instagram.com/pscalexzilotti"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm opacity-70 hover:opacity-100 transition-opacity"
-                >
-                  Instagram
-                </a>
-              </li>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+              {footerLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    style={{
+                      fontSize: "0.82rem",
+                      color: "var(--color-text)",
+                      textDecoration: "none",
+                      opacity: 0.75,
+                      transition: "opacity 0.2s, color 0.2s",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.target as HTMLAnchorElement).style.opacity = "1";
+                      (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.target as HTMLAnchorElement).style.opacity = "0.75";
+                      (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
+
+          {/* Contact */}
+          <div>
+            <p
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                letterSpacing: "0.15em",
+                color: "var(--color-muted)",
+                textTransform: "uppercase",
+                marginBottom: "16px",
+              }}
+            >
+              Contato
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <a
+                href="https://wa.me/5541999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "0.82rem",
+                  color: "var(--color-text)",
+                  textDecoration: "none",
+                  opacity: 0.75,
+                }}
+              >
+                WhatsApp
+              </a>
+              <a
+                href="https://instagram.com/alexzilotti"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "0.82rem",
+                  color: "var(--color-text)",
+                  textDecoration: "none",
+                  opacity: 0.75,
+                }}
+              >
+                Instagram
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between gap-4">
-          <p className="text-xs opacity-40 max-w-xl">
-            Todas as informações compartilhadas são protegidas pelo sigilo
-            profissional conforme o Código de Ética do CFP. Este site tem
-            caráter exclusivamente informativo.
+        {/* Bottom */}
+        <div
+          className="footer-btm"
+          style={{
+            borderTop: "1px solid var(--color-border)",
+            paddingTop: "24px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "16px",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "0.72rem",
+              color: "var(--color-muted)",
+              letterSpacing: "0.05em",
+            }}
+          >
+            Todas as informações são protegidas pelo sigilo profissional conforme o Código de Ética do CFP.
           </p>
-          <p className="text-xs opacity-30 shrink-0">© {currentYear} Alex Zilotti</p>
+          <p
+            style={{
+              fontSize: "0.72rem",
+              letterSpacing: "0.1em",
+              color: "var(--color-muted)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            &copy; {currentYear} Alex Cristoffer Zilotti
+          </p>
         </div>
       </div>
-    </div>
+
+      <style>{`
+        @media (max-width: 1100px) {
+          .footer-main { padding: 52px 32px 34px !important; }
+          .footer-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
+          .footer-grid > div:last-child { text-align: left !important; }
+          .footer-btm { flex-direction: column !important; gap: 10px !important; text-align: center !important; }
+        }
+        @media (max-width: 640px) {
+          .footer-main { padding: 52px 24px 34px !important; }
+        }
+      `}</style>
+    </footer>
   );
 }
