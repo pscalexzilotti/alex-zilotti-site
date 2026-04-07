@@ -2,10 +2,10 @@
 const credentials = [
   "CRP 08/48529 (ativa e regularizada)",
   "Mestrando em Psicologia Organizacional",
-  "Especializando em Psicologia Jur\u00eddica e Forense",
+  "Especializando em Psicologia Jurídica e Forense",
   "Especializando em TCC de Alta Performance",
-  "MBA em Gest\u00e3o de Pessoas e Desenvolvimento Gerencial",
-  "Forma\u00e7\u00e3o em Hipnose Cl\u00ednica",
+  "MBA em Gestão de Pessoas e Desenvolvimento Gerencial",
+  "Formação em Hipnose Clínica",
   "Atendimento presencial em Curitiba/PR e online nacional",
 ];
 export default function AboutSection() {
@@ -25,7 +25,7 @@ export default function AboutSection() {
           }}
           className="about-grid"
         >
-          {/* Left — foto */}
+          {/* Left - foto */}
           <div
             style={{
               position: "relative",
@@ -61,7 +61,7 @@ export default function AboutSection() {
                 zIndex: 2,
               }}
             />
-            {/* Fallback placeholder */}
+            {/* Fallback */}
             <div
               style={{
                 position: "absolute",
@@ -87,7 +87,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right — texto */}
+          {/* Right - texto */}
           <div>
             <p
               style={{
@@ -115,7 +115,7 @@ export default function AboutSection() {
               <em>Zilotti</em>
             </h2>
 
-            {/* Descri\u00e7\u00e3o mobile */}
+            {/* Descricao mobile */}
             <p
               className="about-body-mobile"
               style={{
@@ -126,10 +126,10 @@ export default function AboutSection() {
                 fontSize: "0.95rem",
               }}
             >
-              Psic\u00f3logo com 15 anos em organiza\u00e7\u00f5es como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jur\u00eddica/forense, cl\u00ednica (TCC) e organizacional.
+              Psicólogo com 15 anos em organizações como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurídica/forense, clínica (TCC) e organizacional.
             </p>
 
-            {/* Descri\u00e7\u00e3o desktop */}
+            {/* Descricao desktop */}
             <p
               className="about-body-desktop"
               style={{
@@ -140,7 +140,7 @@ export default function AboutSection() {
                 fontSize: "0.95rem",
               }}
             >
-              Psic\u00f3logo com 15 anos de experi\u00eancia em organiza\u00e7\u00f5es de elite como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jur\u00eddica/forense, cl\u00ednica (TCC) e organizacional. Integro rigor cient\u00edfico, experi\u00eancia corporativa e precis\u00e3o jur\u00eddica para atender contextos de m\u00e1xima exig\u00eancia.
+              Psicólogo com 15 anos de experiência em organizações de elite como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurídica/forense, clínica (TCC) e organizacional. Integro rigor científico, experiência corporativa e precisão jurídica para atender contextos de máxima exigência.
             </p>
 
             {/* Credentials */}
@@ -165,7 +165,7 @@ export default function AboutSection() {
                     gap: "10px",
                   }}
                 >
-                  <span style={{ color: "var(--color-gold)", marginTop: "2px" }}>&#8212;</span>
+                  <span style={{ color: "var(--color-gold)", marginTop: "2px" }}>&mdash;</span>
                   {c}
                 </li>
               ))}
