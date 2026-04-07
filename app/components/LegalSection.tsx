@@ -70,7 +70,7 @@ export default function LegalSection() {
                 maxWidth: 400,
               }}
             >
-              Mais de 15 anos atuando na intersecção entre Direito e Psicologia.
+                          15 anos de experiência com foco em contexto organizacional e jurídico.
               Atendimento a pessoas envolvidas em processos judiciais e suporte técnico
               especializado para profissionais do Direito.
             </p>
