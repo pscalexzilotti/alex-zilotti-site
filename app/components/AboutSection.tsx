@@ -1,3 +1,4 @@
+"use client";
 const credentials = [
   "Psicólogo CRP 08/48529",
   "Mestre em Psicologia Organizacional",
