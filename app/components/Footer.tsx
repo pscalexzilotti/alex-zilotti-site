@@ -1,3 +1,4 @@
+"use client";
 const footerLinks = [
   { href: "#alta-performance", label: "Psicoterapia" },
   { href: "#juridico", label: "Psicologia Jurídica" },
