@@ -40,7 +40,7 @@ export default function Hero() {
           }}
         >
           <span style={{ width: 22, height: 1, background: "var(--color-gold-dim)", display: "inline-block", flexShrink: 0 }} />
-          Psicologia Jurídica · Alta Performance · Psicologia Forense
+                      Psicologia Jurídica · Psicologia Organizacional · Psicologia Clínica
         </p>
         {/* H1 */}
         <h1
