@@ -1,18 +1,21 @@
 const topics = [
   {
-    tag: "Suporte Técnico",
-    title: "Laudos e Avaliações Periciais",
-    body: "Elaboração de laudos psicológicos com rigor científico e linguagem jurídica adequada para atuar como prova técnica em processos civis, criminais e de família.",
+    tag: "Análise Técnica",
+    title: "Capacidade Volitiva e Dano Moral",
+    bodyMobile: "Análise de capacidade volitiva, dano moral psicológico e impactos emocionais (art. 1.111 CPC).",
+    bodyDesktop: "Análise técnica de capacidade volitiva e discernimento (art. 1.111 CPC), dano moral psicológico e impactos emocionais documentados com rigor científico para uso processual.",
   },
   {
-    tag: "Assessoria",
-    title: "Suporte a Advogados e Escritórios",
-    body: "Apoio técnico psicológico para escritórios em casos de alta complexidade: avaliação de testemunhas, análise de comportamento e orientação em situações de crise.",
+    tag: "Burnout Litigioso",
+    title: "Síndrome de Burnout e Estresse Processual",
+    bodyMobile: "Avaliação e documentação de síndrome de burnout litigioso e estresse processual crônico.",
+    bodyDesktop: "Avaliação especializada da síndrome de burnout litigioso e estresse processual crônico, com entrevistas estruturadas e testes psicológicos validados (WISC, WAIS, Rorschach).",
   },
   {
-    tag: "Especialidade",
-    title: "Psicologia Forense e Criminal",
-    body: "Atuação em casos que envolvem trauma, alienação parental, imputação de crimes e outros contextos onde a psicologia é determinante para a justiça.",
+    tag: "Documentação",
+    title: "Relatórios para Provas Periciais",
+    bodyMobile: "Laudos técnicos para provas periciais, contestação, agravo de instrumento e recurso especial.",
+    bodyDesktop: "Documentos entregues: relatórios técnicos para provas periciais, contestação, agravo de instrumento e recurso especial. Distinção clara: assistente técnico (nomeado pela parte) vs. perito judicial (nomeado pelo juíz).",
   },
 ];
 
@@ -37,122 +40,170 @@ export default function LegalSection() {
           <div>
             <p
               style={{
-                fontSize: "0.62rem",
-                letterSpacing: "0.22em",
+                fontSize: "0.52rem",
+                letterSpacing: "0.38em",
                 textTransform: "uppercase",
                 color: "var(--color-gold)",
                 fontWeight: 400,
                 marginBottom: 20,
               }}
             >
-              Psicologia Jurídica
+              Jurídico
             </p>
             <h2
               style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.9rem, 3.5vw, 2.9rem)",
+                fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)",
                 fontWeight: 300,
-                lineHeight: 1.12,
-                color: "var(--color-text)",
+                lineHeight: 1.15,
+                marginBottom: 24,
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              Assistente Técnico{" "}
+              <em style={{ fontStyle: "italic" }}>Psicológico</em>
+            </h2>
+
+            <p
+              style={{
+                fontSize: "0.72rem",
+                letterSpacing: "0.12em",
+                color: "var(--color-gold)",
+                marginBottom: 20,
+                fontWeight: 400,
+              }}
+            >
+              Resolução CFP nº 08/2010
+            </p>
+
+            {/* Descrição mobile */}
+            <p
+              className="legal-body-mobile"
+              style={{
+                fontSize: "0.88rem",
+                lineHeight: 1.75,
+                color: "var(--color-muted)",
                 marginBottom: 32,
               }}
             >
-              Onde o Direito
-              <br />
-              <em style={{ fontStyle: "italic", color: "var(--color-gold-light)" }}>precisa de psicologia</em>
-            </h2>
-            <p
-              style={{
-                fontSize: "0.88rem",
-                color: "var(--color-muted)",
-                lineHeight: 1.9,
-                marginBottom: 40,
-                maxWidth: 400,
-              }}
-            >
-                                                  Com mais de 15 anos de trajetória em grandes organizações e multinacionais como Vale,
-                                      Petrobras, XP Investimentos e em Portugal. Atendimento especializado a pessoas
-                                      envolvidas em processos judiciais e suporte técnico para profissionais do Direito.
+              Para advogados: nomeio-me como assistente técnico do seu cliente,
+              produzindo laudos subsidiários e pareceres psicológicos que fortalecem
+              o contraditório.
             </p>
 
-            {/* Quote */}
-            <blockquote
+            {/* Descrição desktop */}
+            <p
+              className="legal-body-desktop"
               style={{
-                borderLeft: "2px solid var(--color-gold)",
-                paddingLeft: 28,
-                margin: 0,
+                fontSize: "0.88rem",
+                lineHeight: 1.75,
+                color: "var(--color-muted)",
+                marginBottom: 32,
+                display: "none",
               }}
             >
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "1.1rem",
-                  fontWeight: 300,
-                  fontStyle: "italic",
-                  color: "var(--color-text)",
-                  lineHeight: 1.6,
-                  marginBottom: 12,
-                }}
-              >
-                “A psicologia não suaviza o processo. Ela torna possível entendê-lo.”
-              </p>
-              <cite
-                style={{
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.14em",
-                  textTransform: "uppercase",
-                  color: "var(--color-muted)",
-                  fontStyle: "normal",
-                }}
-              >
-                Alex Cristoffer Zilotti
-              </cite>
-            </blockquote>
+              Para advogados de elite: posiciono-me como assistente técnico do seu
+              cliente (Resolução CFP nº 08/2010), produzindo laudos subsidiários e
+              pareceres psicológicos que fundamentam o contraditório processual.
+              Distinção legal clara: assistente técnico (nomeado pela parte) vs.
+              perito judicial (nomeado pelo juíz).
+            </p>
+
+            <a
+              href="#contato"
+              style={{
+                display: "inline-block",
+                padding: "14px 32px",
+                background: "var(--color-gold)",
+                color: "var(--color-bg)",
+                fontSize: "0.7rem",
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                transition: "background 0.2s",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.background = "var(--color-gold-light)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.background = "var(--color-gold)")
+              }
+            >
+              Solicitar Assistente Técnico
+            </a>
           </div>
 
-          {/* Right: tópicos */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-            {topics.map((t, i) => (
+          {/* Right — topics */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 28,
+            }}
+          >
+            {topics.map((topic) => (
               <div
-                key={i}
+                key={topic.title}
                 style={{
-                  borderTop: "1px solid var(--color-border)",
-                  padding: "32px 0",
+                  borderLeft: "2px solid var(--color-gold)",
+                  paddingLeft: 24,
                 }}
               >
                 <p
                   style={{
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.2em",
+                    fontSize: "0.52rem",
+                    letterSpacing: "0.3em",
                     textTransform: "uppercase",
                     color: "var(--color-gold)",
-                    marginBottom: 10,
+                    marginBottom: 6,
                   }}
                 >
-                  {t.tag}
+                  {topic.tag}
                 </p>
                 <h3
                   style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "1.15rem",
+                    fontSize: "0.95rem",
                     fontWeight: 400,
-                    color: "var(--color-text)",
-                    marginBottom: 12,
+                    fontFamily: "var(--font-display)",
+                    marginBottom: 8,
+                    lineHeight: 1.3,
                   }}
                 >
-                  {t.title}
+                  {topic.title}
                 </h3>
-                <p style={{ fontSize: "0.83rem", color: "var(--color-muted)", lineHeight: 1.8 }}>
-                  {t.body}
+                <p
+                  className="legal-topic-mobile"
+                  style={{
+                    fontSize: "0.76rem",
+                    color: "var(--color-muted)",
+                    lineHeight: 1.65,
+                  }}
+                >
+                  {topic.bodyMobile}
+                </p>
+                <p
+                  className="legal-topic-desktop"
+                  style={{
+                    fontSize: "0.76rem",
+                    color: "var(--color-muted)",
+                    lineHeight: 1.65,
+                    display: "none",
+                  }}
+                >
+                  {topic.bodyDesktop}
                 </p>
               </div>
             ))}
-            <div style={{ borderTop: "1px solid var(--color-border)" }} />
           </div>
         </div>
       </div>
 
       <style>{`
+        @media (min-width: 1024px) {
+          .legal-body-desktop { display: block !important; }
+          .legal-body-mobile { display: none !important; }
+          .legal-topic-desktop { display: block !important; }
+          .legal-topic-mobile { display: none !important; }
+        }
         @media (max-width: 1100px) {
           .legal-section { padding: 92px 32px !important; }
           .legal-grid { grid-template-columns: 1fr !important; gap: 52px !important; }
