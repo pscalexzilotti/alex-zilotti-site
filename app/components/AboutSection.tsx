@@ -2,10 +2,10 @@
 const credentials = [
   "CRP 08/48529 (ativa e regularizada)",
   "Mestrando em Psicologia Organizacional",
-  "Especializando em Psicologia Jurídica e Forense",
+  "Especializando em Psicologia Jur\u00eddica e Forense",
   "Especializando em TCC de Alta Performance",
-  "MBA em Gestão de Pessoas e Desenvolvimento Gerencial",
-  "Formação em Hipnose Clínica",
+  "MBA em Gest\u00e3o de Pessoas e Desenvolvimento Gerencial",
+  "Forma\u00e7\u00e3o em Hipnose Cl\u00ednica",
   "Atendimento presencial em Curitiba/PR e online nacional",
 ];
 export default function AboutSection() {
@@ -35,7 +35,7 @@ export default function AboutSection() {
             className="about-img-wrap"
           >
             <img
-              src="/images/sobre.jpg"
+              src="/sobre.jpg"
               alt="Alex Cristoffer Zilotti"
               style={{
                 position: "absolute",
@@ -45,6 +45,9 @@ export default function AboutSection() {
                 objectFit: "cover",
                 objectPosition: "center top",
               }}
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = "none";
+              }}
             />
             {/* Gold accent */}
             <div
@@ -52,71 +55,94 @@ export default function AboutSection() {
                 position: "absolute",
                 bottom: 0,
                 left: 0,
-                width: 4,
-                height: "40%",
+                right: 0,
+                height: "3px",
                 background: "var(--color-gold)",
-                zIndex: 1,
+                zIndex: 2,
               }}
             />
+            {/* Fallback placeholder */}
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                background: "var(--color-bg)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                zIndex: -1,
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "0.6rem",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                  color: "var(--color-gold)",
+                  opacity: 0.4,
+                }}
+              >
+                foto institucional
+              </span>
+            </div>
           </div>
+
           {/* Right — texto */}
           <div>
             <p
               style={{
                 fontSize: "0.52rem",
-                letterSpacing: "0.38em",
+                letterSpacing: "0.22em",
                 textTransform: "uppercase",
                 color: "var(--color-gold)",
-                fontWeight: 400,
-                marginBottom: 20,
+                marginBottom: "16px",
               }}
             >
               Sobre
             </p>
             <h2
               style={{
-                fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                fontSize: "clamp(2rem, 3.2vw, 3rem)",
                 fontWeight: 300,
-                lineHeight: 1.12,
-                marginBottom: 28,
-                fontFamily: "var(--font-display)",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                marginBottom: "28px",
+                color: "var(--color-text)",
               }}
             >
               Alex Cristoffer
               <br />
-              <em style={{ fontStyle: "italic" }}>Zilotti</em>
+              <em>Zilotti</em>
             </h2>
-            {/* Descrição mobile */}
+
+            {/* Descri\u00e7\u00e3o mobile */}
             <p
               className="about-body-mobile"
               style={{
-                fontSize: "0.88rem",
-                lineHeight: 1.75,
+                display: "block",
                 color: "var(--color-muted)",
-                marginBottom: 32,
+                lineHeight: 1.75,
+                marginBottom: "32px",
+                fontSize: "0.95rem",
               }}
             >
-              Psicólogo com 15 anos em organizações como Vale, Petrobras, XP
-              Investimentos e Portugal. Especializado em psicologia jurídica/forense,
-              clínica (TCC) e organizacional.
+              Psic\u00f3logo com 15 anos em organiza\u00e7\u00f5es como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jur\u00eddica/forense, cl\u00ednica (TCC) e organizacional.
             </p>
-            {/* Descrição desktop */}
+
+            {/* Descri\u00e7\u00e3o desktop */}
             <p
               className="about-body-desktop"
               style={{
-                fontSize: "0.88rem",
-                lineHeight: 1.75,
-                color: "var(--color-muted)",
-                marginBottom: 32,
                 display: "none",
+                color: "var(--color-muted)",
+                lineHeight: 1.75,
+                marginBottom: "32px",
+                fontSize: "0.95rem",
               }}
             >
-              Psicólogo com 15 anos de experiência em organizações de elite como Vale,
-              Petrobras, XP Investimentos e Portugal. Especializado em psicologia
-              jurídica/forense, clínica (TCC) e organizacional. Integro rigor científico,
-              experiência corporativa e precisão jurídica para atender contextos de
-              máxima exigência.
+              Psic\u00f3logo com 15 anos de experi\u00eancia em organiza\u00e7\u00f5es de elite como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jur\u00eddica/forense, cl\u00ednica (TCC) e organizacional. Integro rigor cient\u00edfico, experi\u00eancia corporativa e precis\u00e3o jur\u00eddica para atender contextos de m\u00e1xima exig\u00eancia.
             </p>
+
             {/* Credentials */}
             <ul
               style={{
@@ -125,64 +151,54 @@ export default function AboutSection() {
                 margin: "0 0 36px",
                 display: "flex",
                 flexDirection: "column",
-                gap: 10,
+                gap: "10px",
               }}
             >
               {credentials.map((c) => (
                 <li
                   key={c}
                   style={{
+                    fontSize: "0.82rem",
+                    color: "var(--color-muted)",
                     display: "flex",
                     alignItems: "flex-start",
-                    gap: 10,
-                    fontSize: "0.78rem",
-                    color: "var(--color-text)",
-                    lineHeight: 1.5,
+                    gap: "10px",
                   }}
                 >
-                  <span
-                    style={{
-                      color: "var(--color-gold)",
-                      flexShrink: 0,
-                      marginTop: 2,
-                    }}
-                  >
-                    —
-                  </span>
+                  <span style={{ color: "var(--color-gold)", marginTop: "2px" }}>&#8212;</span>
                   {c}
                 </li>
               ))}
             </ul>
+
             {/* CTA */}
             <a
               href="#contato"
               style={{
-                display: "inline-block",
-                padding: "14px 32px",
                 background: "var(--color-gold)",
                 color: "var(--color-bg)",
-                fontSize: "0.7rem",
-                letterSpacing: "0.18em",
+                padding: "13px 26px",
+                fontSize: "0.8rem",
+                letterSpacing: "0.12em",
                 textTransform: "uppercase",
                 textDecoration: "none",
+                fontWeight: 600,
+                display: "inline-block",
                 transition: "background 0.2s",
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "var(--color-gold-light)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "var(--color-gold)")
-              }
+              onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-gold-light)")}
+              onMouseLeave={(e) => (e.currentTarget.style.background = "var(--color-gold)")}
             >
               Iniciar Conversa
             </a>
           </div>
         </div>
       </div>
+
       <style>{`
         @media (min-width: 1024px) {
           .about-body-desktop { display: block !important; }
-          .about-body-mobile { display: none !important; }
+          .about-body-mobile  { display: none  !important; }
         }
         @media (max-width: 1100px) {
           .about-section { padding: 92px 32px !important; }
