@@ -1,3 +1,4 @@
+"use client";
 const pillars = [
   {
     n: "01",
