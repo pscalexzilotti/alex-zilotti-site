@@ -4,7 +4,7 @@ const credentials = [
   "Mestre em Psicologia Organizacional",
   "Especialista em Psicologia Jurídica e Forense",
   "Formação em TCC — Terapia Cognitivo-Comportamental",
-  "+ 15 anos de experiência clínica",
+    "+ 15 anos em contexto organizacional — Vale, Petrobras, XP Investimentos e Portugal",
 ];
 
 export default function AboutSection() {
@@ -91,10 +91,10 @@ export default function AboutSection() {
                 marginBottom: 20,
               }}
             >
-              Psicólogo com formação sólida e mais de 15 anos de atuação clínica,
-              jurídica e organizacional. Trabalho com quem enfrenta decisões de alto
-              impacto: executivos, profissionais do direito, empresas e pessoas em
-              processos judiciais.
+                          Psicólogo com formação sólida e 15 anos de experiência em contexto
+                          organizacional de multinacionais como Vale, Petrobras, XP Investimentos
+                          e Portugal. Trabalho com quem enfrenta decisões de alto impacto:
+                          executivos, profissionais do direito, empresas e pessoas em processos judiciais.
             </p>
             <p
               style={{
