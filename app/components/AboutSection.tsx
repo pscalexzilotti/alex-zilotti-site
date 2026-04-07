@@ -35,7 +35,7 @@ export default function AboutSection() {
             className="about-img-wrap"
           >
             <img
-              src="/sobre.jpg"
+              src="/images/sobre.jpg"
               alt="Alex Cristoffer Zilotti"
               style={{
                 position: "absolute",
