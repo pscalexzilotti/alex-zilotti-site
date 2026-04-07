@@ -41,7 +41,6 @@ export default function Hero() {
         >
           Psicologia Jurídica · Psicologia Organizacional · Psicologia Clínica
         </p>
-
         {/* H1 mobile */}
         <h1
           className="animate-fade-up delay-2 hero-h1-mobile"
@@ -59,7 +58,6 @@ export default function Hero() {
           <br />
           convergem.
         </h1>
-
         {/* H1 desktop */}
         <h1
           className="animate-fade-up delay-2 hero-h1-desktop"
@@ -102,7 +100,6 @@ export default function Hero() {
             clínica, jurídica e organizacional.
           </span>
         </h1>
-
         {/* Subtitulo */}
         <p
           className="animate-fade-up delay-3"
@@ -117,7 +114,6 @@ export default function Hero() {
           Atendimento online e presencial para executivos, advogados e empresas de elite.
           Suporte técnico especializado para escritórios em casos onde Direito e Psicologia se cruzam.
         </p>
-
         {/* CTAs */}
         <div
           className="animate-fade-up delay-4"
@@ -172,7 +168,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
       {/* Right — foto */}
       <div
         style={{
@@ -182,6 +177,19 @@ export default function Hero() {
         }}
         className="hero-right"
       >
+        <img
+          src="/images/hero.jpg"
+          alt="Alex Cristoffer Zilotti"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center top",
+            animation: "imgIn 1.2s ease both",
+          }}
+        />
         <div
           style={{
             position: "absolute",
@@ -192,7 +200,6 @@ export default function Hero() {
           }}
         />
       </div>
-
       <style>{`
         @keyframes imgIn {
           from { opacity: 0; transform: scale(1.04); }
