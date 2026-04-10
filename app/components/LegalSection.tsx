@@ -1,136 +1,149 @@
 const topics = [
   {
     tag: "Análise Técnica",
-    title: "Capacidade Volitiva e Dano Moral",
-    bodyMobile: "Análise de capacidade volitiva, dano moral psicológico e impactos emocionais (art. 1.111 CPC).",
-    bodyDesktop: "Análise técnica de capacidade volitiva e discernimento (art. 1.111 CPC), dano moral psicológico e impactos emocionais documentados com rigor científico para uso processual.",
+    title: "Capacidade, discernimento e dano psíquico",
+    bodyMobile:
+      "Análise técnica de capacidade, discernimento e impactos emocionais relevantes ao processo.",
+    bodyDesktop:
+      "Análise técnica de capacidade, discernimento e dano psíquico, com fundamentação psicológica clara para subsidiar estratégia processual, quesitos e manifestações da parte.",
   },
   {
-    tag: "Burnout Litigioso",
-    title: "Síndrome de Burnout e Estresse Processual",
-    bodyMobile: "Avaliação e documentação de síndrome de burnout litigioso e estresse processual crônico.",
-    bodyDesktop: "Avaliação especializada da síndrome de burnout litigioso e estresse processual crônico, com entrevistas estruturadas e testes psicológicos validados (WISC, WAIS, Rorschach).",
+    tag: "Burnout e Trabalho",
+    title: "Burnout, assédio e sofrimento ocupacional",
+    bodyMobile:
+      "Avaliação psicológica de burnout, assédio e sofrimento emocional relacionado ao trabalho.",
+    bodyDesktop:
+      "Avaliação psicológica de burnout, estresse ocupacional, assédio e sofrimento emocional vinculado ao contexto de trabalho, com documentação técnica útil para ações e defesas.",
   },
   {
-    tag: "Documentação",
-    title: "Relatórios para Provas Periciais",
-    bodyMobile: "Laudos técnicos para provas periciais, contestação, agravo de instrumento e recurso especial.",
-    bodyDesktop: "Documentos entregues: relatórios técnicos para provas periciais, contestação, agravo de instrumento e recurso especial.",
+    tag: "Pareceres",
+    title: "Relatórios e pareceres para o contraditório",
+    bodyMobile:
+      "Relatórios e pareceres técnicos para fortalecer o contraditório e orientar a atuação do advogado.",
+    bodyDesktop:
+      "Elaboração de relatórios e pareceres psicológicos para fortalecer o contraditório, apoiar impugnações, formular quesitos e analisar tecnicamente conclusões periciais.",
   },
+];
+
+const assistantItems = [
+  "Nomeado pela parte ou pelo advogado",
+  "Atua em favor da estratégia técnica do cliente",
+  "Produz parecer ou laudo subsidiário",
+  "Fortalece o contraditório",
+  "Pode analisar criticamente o laudo pericial",
+];
+
+const expertItems = [
+  "Nomeado pelo juiz",
+  "Deve atuar com imparcialidade",
+  "Produz laudo pericial oficial",
+  "Auxilia o juízo",
+  "Não representa nenhuma das partes",
 ];
 
 export default function LegalSection() {
   return (
     <section
       id="juridico"
-      style={{ background: "var(--color-bg)", padding: "128px 64px" }}
       className="legal-section"
+      style={{ background: "var(--color-bg)", padding: "128px 64px" }}
     >
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <div
+          className="legal-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "1.08fr 0.92fr",
             gap: "80px",
             alignItems: "start",
           }}
-          className="legal-grid"
         >
-          {/* Left */}
           <div>
             <p
               style={{
-                fontSize: "0.7rem",
+                fontSize: "0.72rem",
                 textTransform: "uppercase",
                 color: "var(--color-gold)",
                 letterSpacing: "0.2em",
-                marginBottom: "24px",
-                fontWeight: 500,
+                marginBottom: "20px",
+                fontWeight: 600,
               }}
             >
-              Jurídico
+              Psicologia Jurídica
             </p>
+
             <h2
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(2rem, 4vw, 3rem)",
+                fontSize: "clamp(2.1rem, 4vw, 3.2rem)",
                 fontWeight: 300,
                 color: "var(--color-text)",
-                marginBottom: "16px",
-                lineHeight: 1.15,
+                marginBottom: "14px",
+                lineHeight: 1.1,
               }}
             >
-              Assistente Técnico{" "}
-              <em>Psicológico</em>
+              Assistente Técnico <em>Psicológico</em>
             </h2>
+
             <p
               style={{
                 fontSize: "0.82rem",
                 color: "var(--color-gold)",
                 letterSpacing: "0.1em",
-                marginBottom: "32px",
+                marginBottom: "28px",
                 textTransform: "uppercase",
               }}
             >
-              Resolução CFP nº 08/2010
+              Atuação técnica para advogados e processos judiciais
             </p>
 
-            {/* Descrição mobile */}
             <p
-              className="legal-body-mobile"
               style={{
                 fontSize: "1rem",
                 color: "var(--color-muted)",
-                lineHeight: 1.7,
-                marginBottom: "40px",
+                lineHeight: 1.75,
+                marginBottom: "36px",
+                maxWidth: "62ch",
               }}
             >
-              Para advogados: nomeio-me como assistente técnico do seu cliente, produzindo laudos subsidiários e pareceres psicológicos que fortalecem o contráditório.
+              Atuo ao lado do advogado e de seu cliente na análise técnica de
+              questões psicológicas relevantes ao processo, com elaboração de
+              pareceres e documentos que ajudem a sustentar o contraditório com
+              clareza, método e rigor profissional.
             </p>
 
-            {/* Descrição desktop */}
-            <p
-              className="legal-body-desktop"
-              style={{
-                fontSize: "1rem",
-                color: "var(--color-muted)",
-                lineHeight: 1.7,
-                marginBottom: "40px",
-                display: "none",
-              }}
-            >
-              Para advogados de elite: posiciono-me como assistente técnico do seu cliente (Resolução CFP nº 08/2010), produzindo laudos subsidiários e pareceres psicológicos que fundamentam o contráditório processual.
-            </p>
-
-            {/* Box comparativo: Assistente Técnico x Perito Judicial */}
             <div
+              className="compare-box"
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
-                gap: "2px",
-                marginBottom: "40px",
+                gap: "1px",
+                marginBottom: "36px",
                 border: "1px solid var(--color-border)",
+                background: "var(--color-border)",
+                overflow: "hidden",
+                borderRadius: "16px",
               }}
             >
-              {/* Coluna: Assistente Técnico */}
               <div
                 style={{
                   background: "var(--color-gold)",
-                  padding: "24px 20px",
+                  padding: "24px 22px",
                 }}
               >
                 <p
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.68rem",
                     textTransform: "uppercase",
-                    letterSpacing: "0.15em",
+                    letterSpacing: "0.14em",
                     color: "var(--color-bg)",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "12px",
                   }}
                 >
                   Assistente Técnico
                 </p>
+
                 <ul
                   style={{
                     listStyle: "none",
@@ -138,52 +151,47 @@ export default function LegalSection() {
                     margin: 0,
                     display: "flex",
                     flexDirection: "column",
-                    gap: 8,
+                    gap: 10,
                   }}
                 >
-                  {[
-                    "Nomeado pela parte (advogado)",
-                    "Defende os interesses do cliente",
-                    "Produz laudo subsidiário",
-                    "Atua no contraditório",
-                    "Pode questionar o perito judicial",
-                  ].map((item) => (
+                  {assistantItems.map((item) => (
                     <li
                       key={item}
                       style={{
-                        fontSize: "0.82rem",
+                        fontSize: "0.88rem",
                         color: "var(--color-bg)",
                         display: "flex",
                         gap: 8,
                         alignItems: "flex-start",
-                        lineHeight: 1.4,
+                        lineHeight: 1.45,
                       }}
                     >
-                      <span style={{ opacity: 0.7, flexShrink: 0 }}>✔</span> {item}
+                      <span style={{ opacity: 0.75, flexShrink: 0 }}>✔</span>
+                      {item}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Coluna: Perito Judicial */}
               <div
                 style={{
                   background: "var(--color-surface)",
-                  padding: "24px 20px",
+                  padding: "24px 22px",
                 }}
               >
                 <p
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.68rem",
                     textTransform: "uppercase",
-                    letterSpacing: "0.15em",
+                    letterSpacing: "0.14em",
                     color: "var(--color-muted)",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "12px",
                   }}
                 >
                   Perito Judicial
                 </p>
+
                 <ul
                   style={{
                     listStyle: "none",
@@ -191,72 +199,86 @@ export default function LegalSection() {
                     margin: 0,
                     display: "flex",
                     flexDirection: "column",
-                    gap: 8,
+                    gap: 10,
                   }}
                 >
-                  {[
-                    "Nomeado pelo juíz",
-                    "Postura neutra e imparcial",
-                    "Produz laudo oficial",
-                    "Auxiliar do juízo",
-                    "Não defende nenhuma das partes",
-                  ].map((item) => (
+                  {expertItems.map((item) => (
                     <li
                       key={item}
                       style={{
-                        fontSize: "0.82rem",
+                        fontSize: "0.88rem",
                         color: "var(--color-muted)",
                         display: "flex",
                         gap: 8,
                         alignItems: "flex-start",
-                        lineHeight: 1.4,
-                        opacity: 0.75,
+                        lineHeight: 1.45,
                       }}
                     >
-                      <span style={{ flexShrink: 0 }}>—</span> {item}
+                      <span style={{ flexShrink: 0 }}>—</span>
+                      {item}
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
 
-            <a
-              href="#contato"
-              className="btn-gold"
-              style={{ display: "inline-block" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "var(--color-gold-light)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "var(--color-gold)")
-              }
+            <div
+              style={{
+                display: "flex",
+                gap: "14px",
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
             >
-              Solicitar Assistente Técnico
-            </a>
+              <a
+                href="#contato"
+                className="btn-gold"
+                style={{ display: "inline-block" }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.background =
+                    "var(--color-gold-light)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "var(--color-gold)")
+                }
+              >
+                Enviar caso para análise
+              </a>
+
+              <span
+                style={{
+                  fontSize: "0.9rem",
+                  color: "var(--color-muted)",
+                  lineHeight: 1.5,
+                }}
+              >
+                Atendimento voltado a demandas cíveis, trabalhistas e familiares.
+              </span>
+            </div>
           </div>
 
-          {/* Right — topics */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "34px" }}>
             {topics.map((topic) => (
               <div
                 key={topic.tag}
                 style={{
-                  paddingBottom: "40px",
+                  paddingBottom: "34px",
                   borderBottom: "1px solid var(--color-border)",
                 }}
               >
                 <p
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.68rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.15em",
                     color: "var(--color-gold)",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     marginBottom: "12px",
                   }}
                 >
                   {topic.tag}
                 </p>
+
                 <h3
                   style={{
                     fontFamily: "var(--font-display)",
@@ -264,26 +286,29 @@ export default function LegalSection() {
                     fontWeight: 300,
                     color: "var(--color-text)",
                     marginBottom: "12px",
+                    lineHeight: 1.2,
                   }}
                 >
                   {topic.title}
                 </h3>
+
                 <p
                   className="legal-body-mobile"
                   style={{
-                    fontSize: "0.92rem",
+                    fontSize: "0.95rem",
                     color: "var(--color-muted)",
                     lineHeight: 1.65,
                   }}
                 >
                   {topic.bodyMobile}
                 </p>
+
                 <p
                   className="legal-body-desktop"
                   style={{
-                    fontSize: "0.92rem",
+                    fontSize: "0.95rem",
                     color: "var(--color-muted)",
-                    lineHeight: 1.65,
+                    lineHeight: 1.7,
                     display: "none",
                   }}
                 >
@@ -297,15 +322,35 @@ export default function LegalSection() {
 
       <style jsx>{`
         @media (min-width: 1024px) {
-          .legal-body-desktop { display: block !important; }
-          .legal-body-mobile { display: none !important; }
+          .legal-body-desktop {
+            display: block !important;
+          }
+          .legal-body-mobile {
+            display: none !important;
+          }
         }
+
         @media (max-width: 1100px) {
-          .legal-section { padding: 92px 32px !important; }
-          .legal-grid { grid-template-columns: 1fr !important; gap: 52px !important; }
+          .legal-section {
+            padding: 92px 32px !important;
+          }
+
+          .legal-grid {
+            grid-template-columns: 1fr !important;
+            gap: 52px !important;
+          }
         }
+
+        @media (max-width: 720px) {
+          .compare-box {
+            grid-template-columns: 1fr !important;
+          }
+        }
+
         @media (max-width: 640px) {
-          .legal-section { padding: 76px 24px !important; }
+          .legal-section {
+            padding: 76px 24px !important;
+          }
         }
       `}</style>
     </section>
