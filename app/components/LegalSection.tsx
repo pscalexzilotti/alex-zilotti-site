@@ -234,13 +234,12 @@ export default function LegalSection() {
                 href="#contato"
                 className="btn-gold"
                 style={{ display: "inline-block" }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.background =
-                    "var(--color-gold-light)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "var(--color-gold)")
-                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--color-gold-light)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "var(--color-gold)";
+                }}
               >
                 Enviar caso para análise
               </a>
@@ -257,7 +256,9 @@ export default function LegalSection() {
             </div>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "34px" }}>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "34px" }}
+          >
             {topics.map((topic) => (
               <div
                 key={topic.tag}
@@ -325,6 +326,7 @@ export default function LegalSection() {
           .legal-body-desktop {
             display: block !important;
           }
+
           .legal-body-mobile {
             display: none !important;
           }
