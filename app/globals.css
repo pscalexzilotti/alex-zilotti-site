@@ -9,13 +9,10 @@
   --color-text:         #e8e0d4;
   --color-text-inverse: #0a0a0a;
   --color-muted:        #7a7067;
-  --color-gold:         #c8a96e;
-  --color-gold-light:   #dfc28e;
-  --color-gold-dim:     rgba(200,169,110,0.12);
+  --color-gold-dim: rgba(184, 151, 42, 0.12);  --color-gold-dim:     rgba(200,169,110,0.12);
 
   /* === TIPOGRAFIA === */
-  --font-display: var(--font-playfair), 'Playfair Display', Georgia, serif;
-  --font-sans:    var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;  --font-sans:    var(--font-inter), 'Inter', system-ui, sans-serif;
 
   /* === TRANSICOES === */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
