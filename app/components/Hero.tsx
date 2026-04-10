@@ -12,11 +12,11 @@ export default function Hero() {
           Onde pressão,<br /><span style={{ fontStyle: "italic", fontWeight: 400 }}>decisão</span> e psicologia<br />convergem.
         </h1>
         <p className="animate-fade-up delay-3" style={{ fontSize: "1.08rem", lineHeight: 1.7, color: "var(--color-muted)", marginBottom: "clamp(32px, 4vw, 48px)", maxWidth: "520px" }}>
-          <strong style={{ color: "var(--color-text)" }}>Alex Cristoffer Zilotti</strong><br />Psicólogo CRP 08/48529 | Curitiba/PR<br /><br />Psicologia para alta performance: clínica, jurídica e organizacional.
+          <strong style={{ color: "var(--color-text)" }}>Alex Cristoffer Zilotti</strong><br />Psicólogo CRP 08/48529 | Curitiba/PR<br /><br />Suporte psicológico para advogados, executivos e empresas — com foco em psicologia jurídica e alta performance.
         </p>
         <div className="animate-fade-up delay-4" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <a href="https://wa.me/5541991767772" className="btn-gold">Agendar Consulta</a>
-          <a href="/psicologia-juridica" className="btn-ghost">Solicitar Assistente Técnico</a>
+          <a href="/psicologia-juridica" className="btn-gold">Solicitar Assistente Técnico</a>
+          <a href="https://wa.me/5541991767772" className="btn-ghost">Agendar Consulta</a>
         </div>
       </div>
 
