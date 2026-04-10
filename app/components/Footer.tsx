@@ -1,7 +1,7 @@
 "use client";
 const footerLinks = [
-  { href: "#alta-performance", label: "Psicoterapia" },
-  { href: "#juridico", label: "Psicologia Jurídica" },
+  { href: "/psicologia-juridica", label: "Psicologia Jurídica" },
+  { href: "#psicoterapia", label: "Psicoterapia" },
   { href: "#empresas", label: "Consultoria para Empresas" },
   { href: "#sobre", label: "Sobre" },
 ];
@@ -45,14 +45,13 @@ export default function Footer() {
             </p>
             <p
               style={{
-                fontSize: "0.82rem",
+                fontSize: "0.88rem",
                 color: "var(--color-muted)",
                 lineHeight: 1.7,
-                maxWidth: "280px",
+                maxWidth: "320px",
               }}
             >
-              Psicólogo CRP 08/48529. Atendimento clínico de alta performance,
-              psicologia jurídica e desenvolvimento humano para empresas.
+              Psicólogo CRP 08/48529. Atendimento clínico de alta performance, psicologia jurídica e desenvolvimento humano para empresas.
             </p>
           </div>
 
@@ -61,22 +60,22 @@ export default function Footer() {
             <p
               style={{
                 fontSize: "0.7rem",
-                fontWeight: 700,
+                textTransform: "uppercase",
                 letterSpacing: "0.15em",
                 color: "var(--color-muted)",
-                textTransform: "uppercase",
-                marginBottom: "16px",
+                marginBottom: "20px",
+                fontWeight: 500,
               }}
             >
               Navegação
             </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 12 }}>
               {footerLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     style={{
-                      fontSize: "0.82rem",
+                      fontSize: "0.88rem",
                       color: "var(--color-text)",
                       textDecoration: "none",
                       opacity: 0.75,
@@ -103,22 +102,20 @@ export default function Footer() {
             <p
               style={{
                 fontSize: "0.7rem",
-                fontWeight: 700,
+                textTransform: "uppercase",
                 letterSpacing: "0.15em",
                 color: "var(--color-muted)",
-                textTransform: "uppercase",
-                marginBottom: "16px",
+                marginBottom: "20px",
+                fontWeight: 500,
               }}
             >
               Contato
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               <a
                 href="https://wa.me/5541991767772"
-                target="_blank"
-                rel="noopener noreferrer"
                 style={{
-                  fontSize: "0.82rem",
+                  fontSize: "0.88rem",
                   color: "var(--color-text)",
                   textDecoration: "none",
                   opacity: 0.75,
@@ -137,10 +134,8 @@ export default function Footer() {
               </a>
               <a
                 href="https://instagram.com/psicoalexz"
-                target="_blank"
-                rel="noopener noreferrer"
                 style={{
-                  fontSize: "0.82rem",
+                  fontSize: "0.88rem",
                   color: "var(--color-text)",
                   textDecoration: "none",
                   opacity: 0.75,
@@ -165,37 +160,23 @@ export default function Footer() {
         <div
           className="footer-btm"
           style={{
-            borderTop: "1px solid var(--color-border)",
-            paddingTop: "24px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            gap: "16px",
+            paddingTop: "24px",
+            borderTop: "1px solid var(--color-border)",
           }}
         >
-          <p
-            style={{
-              fontSize: "0.72rem",
-              color: "var(--color-muted)",
-              letterSpacing: "0.05em",
-            }}
-          >
+          <p style={{ fontSize: "0.78rem", color: "var(--color-muted)", opacity: 0.6 }}>
             Todas as informações são protegidas pelo sigilo profissional conforme o Código de Ética do CFP.
           </p>
-          <p
-            style={{
-              fontSize: "0.72rem",
-              letterSpacing: "0.1em",
-              color: "var(--color-muted)",
-              whiteSpace: "nowrap",
-            }}
-          >
+          <p style={{ fontSize: "0.78rem", color: "var(--color-muted)", opacity: 0.6 }}>
             &copy; {currentYear} Alex Cristoffer Zilotti
           </p>
         </div>
       </div>
 
-      <style>{`
+      <style jsx>{`
         @media (max-width: 1100px) {
           .footer-main { padding: 52px 32px 34px !important; }
           .footer-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
