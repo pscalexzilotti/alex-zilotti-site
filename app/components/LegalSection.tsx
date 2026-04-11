@@ -47,7 +47,7 @@ export default function LegalSection() {
     <section
       id="juridico"
       className="legal-section"
-      style={{ background: "var(--color-bg)", padding: "128px 64px" }}
+      style={{ background: "#0a0a0a", padding: "128px 64px" }}
     >
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <div
@@ -64,7 +64,7 @@ export default function LegalSection() {
               style={{
                 fontSize: "0.72rem",
                 textTransform: "uppercase",
-                color: "var(--color-gold)",
+                color: "#c8a96e",
                 letterSpacing: "0.2em",
                 marginBottom: "20px",
                 fontWeight: 600,
@@ -77,7 +77,7 @@ export default function LegalSection() {
               style={{
                 fontSize: "clamp(2rem, 4vw, 3rem)",
                 fontFamily: "var(--font-cormorant)",
-                color: "var(--color-text)",
+                color: "#e8e0d4",
                 lineHeight: 1.15,
                 marginBottom: "28px",
                 fontWeight: 400,
@@ -89,7 +89,7 @@ export default function LegalSection() {
             <p
               style={{
                 fontSize: "0.82rem",
-                color: "var(--color-gold)",
+                color: "#c8a96e",
                 letterSpacing: "0.1em",
                 marginBottom: "28px",
                 textTransform: "uppercase",
@@ -101,7 +101,7 @@ export default function LegalSection() {
             <p
               style={{
                 fontSize: "1rem",
-                color: "var(--color-text-muted)",
+                color: "#7a7067",
                 lineHeight: 1.75,
                 marginBottom: "48px",
               }}
@@ -119,16 +119,16 @@ export default function LegalSection() {
                 gridTemplateColumns: "1fr 1fr",
                 gap: "1px",
                 marginBottom: "36px",
-                border: "1px solid var(--color-border)",
-                background: "var(--color-border)",
+                border: "1px solid #242424",
+                background: "#242424",
                 borderRadius: "4px",
                 overflow: "hidden",
               }}
             >
-              {/* Coluna Assistente Técnico */}
+              {/* Coluna Assistente Técnico - fundo dourado, texto escuro */}
               <div
                 style={{
-                  background: "var(--color-gold)",
+                  background: "#c8a96e",
                   padding: "24px 22px",
                 }}
               >
@@ -137,7 +137,7 @@ export default function LegalSection() {
                     fontSize: "0.68rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.14em",
-                    color: "#1a1a1a",
+                    color: "#0a0a0a",
                     fontWeight: 700,
                     marginBottom: "12px",
                   }}
@@ -159,24 +159,24 @@ export default function LegalSection() {
                       key={item}
                       style={{
                         fontSize: "0.88rem",
-                        color: "#1a1a1a",
+                        color: "#0a0a0a",
                         display: "flex",
                         gap: 8,
                         alignItems: "flex-start",
                         lineHeight: 1.45,
                       }}
                     >
-                      <span style={{ opacity: 1, flexShrink: 0, fontWeight: 700 }}>✔</span>
+                      <span style={{ flexShrink: 0, fontWeight: 700 }}>✔</span>
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Coluna Perito Judicial */}
+              {/* Coluna Perito Judicial - fundo escuro, texto muted */}
               <div
                 style={{
-                  background: "var(--color-surface)",
+                  background: "#161616",
                   padding: "24px 22px",
                 }}
               >
@@ -185,7 +185,7 @@ export default function LegalSection() {
                     fontSize: "0.68rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.14em",
-                    color: "var(--color-text-muted)",
+                    color: "#7a7067",
                     fontWeight: 600,
                     marginBottom: "12px",
                   }}
@@ -207,7 +207,7 @@ export default function LegalSection() {
                       key={item}
                       style={{
                         fontSize: "0.88rem",
-                        color: "var(--color-text-muted)",
+                        color: "#7a7067",
                         display: "flex",
                         gap: 8,
                         alignItems: "flex-start",
@@ -226,8 +226,8 @@ export default function LegalSection() {
               href="#contato"
               style={{
                 display: "inline-block",
-                background: "var(--color-gold)",
-                color: "var(--color-bg)",
+                background: "#c8a96e",
+                color: "#0a0a0a",
                 padding: "14px 32px",
                 fontSize: "0.82rem",
                 letterSpacing: "0.12em",
@@ -237,10 +237,10 @@ export default function LegalSection() {
                 transition: "background 0.2s",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "var(--color-gold-light)";
+                e.currentTarget.style.background = "#d9bb84";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "var(--color-gold)";
+                e.currentTarget.style.background = "#c8a96e";
               }}
             >
               Enviar caso para análise
@@ -248,7 +248,7 @@ export default function LegalSection() {
             <p
               style={{
                 fontSize: "0.75rem",
-                color: "var(--color-text-muted)",
+                color: "#7a7067",
                 marginTop: "12px",
                 opacity: 0.7,
               }}
@@ -269,7 +269,7 @@ export default function LegalSection() {
               <div
                 key={topic.tag}
                 style={{
-                  borderTop: "1px solid var(--color-border)",
+                  borderTop: "1px solid #242424",
                   paddingTop: "32px",
                 }}
               >
@@ -278,7 +278,7 @@ export default function LegalSection() {
                     fontSize: "0.7rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.15em",
-                    color: "var(--color-gold)",
+                    color: "#c8a96e",
                     marginBottom: "10px",
                     fontWeight: 600,
                   }}
@@ -289,7 +289,7 @@ export default function LegalSection() {
                   style={{
                     fontSize: "1.25rem",
                     fontFamily: "var(--font-cormorant)",
-                    color: "var(--color-text)",
+                    color: "#e8e0d4",
                     marginBottom: "12px",
                     fontWeight: 500,
                   }}
@@ -300,7 +300,7 @@ export default function LegalSection() {
                   className="legal-body-mobile"
                   style={{
                     fontSize: "0.9rem",
-                    color: "var(--color-text-muted)",
+                    color: "#7a7067",
                     lineHeight: 1.7,
                   }}
                 >
@@ -310,7 +310,7 @@ export default function LegalSection() {
                   className="legal-body-desktop"
                   style={{
                     fontSize: "0.9rem",
-                    color: "var(--color-text-muted)",
+                    color: "#7a7067",
                     lineHeight: 1.7,
                     display: "none",
                   }}
