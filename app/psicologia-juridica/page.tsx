@@ -84,11 +84,6 @@ export default function JuridicoPage() {
         </section>
       </main>
       <Footer />
-      <style jsx>{`
-        @media (max-width: 900px) {
-          .juridico-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-        }
-      `}</style>
-    </>
+          </>
   );
 }
