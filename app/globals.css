@@ -263,3 +263,27 @@ a {
   }
 }
 }
+
+/* === ESCONDER MARCA D'ÁGUA AI === */
+/* Sobrepor a marca d'água AI com um gradiente escuro */
+/* === ESCONDER MARCA D'ÁGUA AI === */
+/* Criar uma camada sobre a imagem hero para cobrir a marca d'água */
+section:first-of-type {
+  position: relative;
+}
+
+section:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, 
+    #0a0a0a 0%, 
+    #0a0a0a 35%,
+    rgba(10, 10, 10, 0.5) 70%,
+    rgba(10, 10, 10, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
