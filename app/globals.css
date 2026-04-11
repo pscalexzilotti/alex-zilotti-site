@@ -305,7 +305,6 @@ section::before {
     #0a0a0a 30%,
     rgba(10, 10, 10, 0.6) 60%,
     rgba(10, 10, 10, 0) 100%);
-  z-index: 100;
-  pointer-events: none;
+  z-index: 9999;  pointer-events: none;
 }
 }
