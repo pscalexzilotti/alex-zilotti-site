@@ -286,4 +286,26 @@ section:first-of-type::before {
     rgba(10, 10, 10, 0) 100%);
   z-index: 10;
   pointer-events: none;
+
+  /* Aplicar em TODAS as seções com position relative */
+section {
+  position: relative;
+}
+
+/* Cobrir marca d'água em todas as seções */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, 
+    #0a0a0a 0%, 
+    #0a0a0a 30%,
+    rgba(10, 10, 10, 0.6) 60%,
+    rgba(10, 10, 10, 0) 100%);
+  z-index: 100;
+  pointer-events: none;
+}
 }
