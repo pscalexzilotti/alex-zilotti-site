@@ -182,8 +182,7 @@ export default function ServicesGrid() {
                   key={b}
                   style={{
                     fontSize: "0.88rem",
-                    color: svc.highlight ? "var(--color-bg)" : "var(--color-muted)",
-                    display: "flex",
+                color: svc.highlight ? "#0a0a0a" : "#e8e8e8",                    display: "flex",
                     gap: 8,
                     alignItems: "flex-start",
                   }}
@@ -197,8 +196,7 @@ export default function ServicesGrid() {
             <p
               style={{
                 fontSize: "0.78rem",
-                color: svc.highlight ? "var(--color-bg)" : "var(--color-muted)",
-                opacity: 0.7,
+                color: svc.highlight ? "#0a0a0a" : "#e8e8e8",                opacity: 0.7,
                 fontStyle: "italic",
                 marginTop: "auto",
                 paddingTop: 8,
