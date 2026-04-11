@@ -1,3 +1,4 @@
+"use client";
 const topics = [
   {
     tag: "Análise Técnica",
