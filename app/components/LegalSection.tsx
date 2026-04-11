@@ -307,35 +307,6 @@ export default function LegalSection() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        @media (min-width: 1024px) {
-          .legal-body-desktop {
-            display: block !important;
-          }
-          .legal-body-mobile {
-            display: none !important;
-          }
-        }
-        @media (max-width: 1100px) {
-          .legal-section {
-            padding: 92px 32px !important;
-          }
-          .legal-grid {
-            grid-template-columns: 1fr !important;
-            gap: 52px !important;
-          }
-        }
-        @media (max-width: 720px) {
-          .compare-box {
-            grid-template-columns: 1fr !important;
-          }
-        }
-        @media (max-width: 640px) {
-          .legal-section {
-            padding: 76px 24px !important;
-          }
-        }
-      `}</style>
-    </section>
+           </section>
   );
 }
