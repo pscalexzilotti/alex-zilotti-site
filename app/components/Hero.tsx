@@ -6,6 +6,9 @@ export default function Hero() {
     <section id="inicio" style={{ minHeight: "100vh", display: "grid", gridTemplateColumns: "1fr 1fr", position: "relative", overflow: "hidden", background: "var(--color-bg)" }} className="hero-grid">
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 64px 100px", paddingTop: "160px", position: "relative", zIndex: 2 }} className="hero-left">
         </p>
+              <p className="animate-fade-up delay-1" style={{ fontSize: "0.50rem", textTransform: "uppercase", color: "var(--color-gold)", letterSpacing: "0.15em", marginBottom: "24px" }}>
+          Psicologia Jurídica · Psicologia Organizacional · Psicologia Clínica
+        </p>
         <h1 className="animate-fade-up delay-2" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.8rem, 6vw, 4.6rem)", fontWeight: 300, lineHeight: 1.12, color: "var(--color-text)", marginBottom: "clamp(20px, 3vw, 32px)", letterSpacing: "-0.02em" }}>
           Onde pressão,<br /><span style={{ fontStyle: "italic", fontWeight: 400 }}>decisão</span> e psicologia<br />convergem.
         </h1>
