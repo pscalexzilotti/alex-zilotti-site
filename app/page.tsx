@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-
+﻿import type { Metadata } from 'next'
 import Hero from '@/components/home/Hero'
 import Statement from '@/components/home/Statement'
 import Services from '@/components/home/Services'
@@ -9,17 +8,12 @@ import Processo from '@/components/home/Processo'
 import Contato from '@/components/home/Contato'
 
 export const metadata: Metadata = {
-  title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance — CRP 08/48529',
-  description:
-    'Alex Zilotti — Psicólogo Jurídico, Forense e de Alta Performance. Atendimento especializado para empresários, executivos, artistas e suporte técnico pericial para advogados.',
-  keywords:
-    'psicólogo jurídico, psicólogo forense, psicólogo alta performance, assistente perito psicólogo, análise laudo psicológico, TCC alta performance, hipnose clínica, psicologia forense Curitiba',
-  robots: 'index, follow',
+  title: 'Alex Zilotti | PsicÃ³logo JurÃ­dico & Alta Performance â€” CRP 08/48529',
+  description: 'Atendimento para quem opera sob responsabilidade real. Psicologia JurÃ­dica, Forense e de Alta Performance. Curitiba e atendimento online.',
   openGraph: {
-    title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance',
-    description:
-      'Psicologia que opera onde a pressão é real, as decisões são definitivas e a discrição é inegociável.',
-    type: 'website',
+    title: 'Alex Zilotti | PsicÃ³logo JurÃ­dico & Alta Performance',
+    description: 'Psicologia que opera onde a pressÃ£o Ã© real, as decisÃµes sÃ£o definitivas e a discriÃ§Ã£o Ã© inegociÃ¡vel.',
+    images: ['/hero.jpg'],
   },
 }
 
