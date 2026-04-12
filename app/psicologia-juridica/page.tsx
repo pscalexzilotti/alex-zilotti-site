@@ -1,7 +1,7 @@
 "use client";
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
-import LegalSection from "@/app/components/LegalSection";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import LegalSection from "@/components/juridico/LegalSection";
 
 export default function JuridicoPage() {
   return (
@@ -26,7 +26,7 @@ export default function JuridicoPage() {
               Perito Psicólogo Credenciado — TJPR
             </div>
           </div>
-          
+
           <p style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "#c8a96e", letterSpacing: "0.2em", marginBottom: "24px" }}>
             Especialidade Prioritária
           </p>
