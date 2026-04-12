@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/psicologia-juridica", label: "JurÃ­dico" },
+  { href: "/psicologia-juridica", label: "Jurí­dico" },
   { href: "/#psicoterapia", label: "Psicoterapia" },
   { href: "//empresas", label: "Empresas" },
   { href: "/#sobre", label: "Sobre" },
