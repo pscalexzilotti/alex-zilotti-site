@@ -1,32 +1,38 @@
 import type { Metadata } from 'next'
-import {
-  HeroJuridico,
-  IntroJuridico,
-  CinematicStrip,
-  ServicosJuridico,
-  BeneficiosJuridico,
-} from '@/components/juridico/JuridicoComponents'
+
+import Hero from '@/components/home/Hero'
+import Statement from '@/components/home/Statement'
+import Services from '@/components/home/Services'
+import Publico from '@/components/home/Publico'
+import Sobre from '@/components/home/Sobre'
+import Processo from '@/components/home/Processo'
+import Contato from '@/components/home/Contato'
 
 export const metadata: Metadata = {
-  title: 'Assistente Perito em Psicologia Jurídica | Alex Zilotti',
+  title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance — CRP 08/48529',
   description:
-    'Suporte técnico especializado para advogados e escritórios: análise de laudos, formulação de quesitos, pareceres técnicos e acompanhamento de perícias psicológicas.',
+    'Alex Zilotti — Psicólogo Jurídico, Forense e de Alta Performance. Atendimento especializado para empresários, executivos, artistas e suporte técnico pericial para advogados.',
+  keywords:
+    'psicólogo jurídico, psicólogo forense, psicólogo alta performance, assistente perito psicólogo, análise laudo psicológico, TCC alta performance, hipnose clínica, psicologia forense Curitiba',
+  robots: 'index, follow',
   openGraph: {
-    title: 'Assistente Perito em Psicologia Jurídica | Alex Zilotti',
+    title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance',
     description:
-      'Quando Direito e Psicologia se cruzam, a qualidade do suporte técnico psicológico determina a robustez da estratégia.',
-    images: ['https://picsum.photos/seed/law/1200/630'],
+      'Psicologia que opera onde a pressão é real, as decisões são definitivas e a discrição é inegociável.',
+    type: 'website',
   },
 }
 
-export default function JuridicoPage() {
+export default function Home() {
   return (
     <>
-      <HeroJuridico />
-      <IntroJuridico />
-      <CinematicStrip />
-      <ServicosJuridico />
-      <BeneficiosJuridico />
+      <Hero />
+      <Statement />
+      <Services />
+      <Publico />
+      <Sobre />
+      <Processo />
+      <Contato />
     </>
   )
 }
