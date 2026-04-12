@@ -1,192 +1,118 @@
-"use client";
-const footerLinks = [
-  { href: "/psicologia-juridica", label: "Psicologia Jurídica" },
-  { href: "#psicoterapia", label: "Psicoterapia" },
-  { href: "#empresas", label: "Consultoria para Empresas" },
-  { href: "#sobre", label: "Sobre" },
-];
+import Link from 'next/link'
+
+const navLinks = [
+  { label: 'Clínica', href: '/clinica' },
+  { label: 'Para Advogados', href: '/juridico' },
+  { label: 'Imersão', href: '/clinica#imersao' },
+  { label: 'Sobre', href: '/#sobre' },
+  { label: 'Contato', href: '/#contato' },
+]
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer style={{ background: "var(--color-bg)", borderTop: "1px solid var(--color-border)" }}>
+    <footer style={{ background: 'var(--deep)', borderTop: '1px solid rgba(154,128,96,0.08)' }}>
       <div
-        className="footer-main"
+        className="ft-grid"
         style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          padding: "64px 40px 40px",
+          display: 'grid',
+          gridTemplateColumns: '1.5fr 1fr 1fr',
+          gap: 64,
+          maxWidth: 1200,
+          margin: '0 auto',
+          padding: '72px 64px 56px',
+          borderBottom: '1px solid rgba(154,128,96,0.08)',
         }}
       >
-        <div
-          className="footer-grid"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "2fr 1fr 1fr",
-            gap: "48px",
-            marginBottom: "48px",
-          }}
-        >
-          {/* Brand */}
-          <div>
-            <p
-              style={{
-                fontSize: "1.15rem",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                color: "var(--color-gold)",
-                fontFamily: "var(--font-display)",
-                marginBottom: "12px",
-                textTransform: "uppercase",
-              }}
-            >
-              Alex Zilotti
-            </p>
-            <p
-              style={{
-                fontSize: "0.88rem",
-                color: "var(--color-muted)",
-                lineHeight: 1.7,
-                maxWidth: "320px",
-              }}
-            >
-              Psicólogo CRP 08/48529. Atendimento clínico de alta performance, psicologia jurídica e desenvolvimento humano para empresas.
-            </p>
+        {/* Brand */}
+        <div>
+          <div style={{
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontSize: '1.2rem',
+            fontWeight: 400,
+            letterSpacing: '0.06em',
+            color: 'var(--ivory)',
+            marginBottom: 16,
+            lineHeight: 1.2,
+          }}>
+            Alex Zilotti
+            <small style={{
+              display: 'block',
+              fontFamily: 'var(--font-jost), system-ui, sans-serif',
+              fontSize: '0.48rem',
+              letterSpacing: '0.32em',
+              textTransform: 'uppercase',
+              color: 'var(--gold)',
+              fontWeight: 400,
+              marginTop: 3,
+            }}>
+              Psicólogo · CRP 08/48529
+            </small>
           </div>
-
-          {/* Links */}
-          <div>
-            <p
-              style={{
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.15em",
-                color: "var(--color-muted)",
-                marginBottom: "20px",
-                fontWeight: 500,
-              }}
-            >
-              Navegação
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 12 }}>
-              {footerLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    style={{
-                      fontSize: "0.88rem",
-                      color: "var(--color-text)",
-                      textDecoration: "none",
-                      opacity: 0.75,
-                      transition: "opacity 0.2s, color 0.2s",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.target as HTMLAnchorElement).style.opacity = "1";
-                      (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.target as HTMLAnchorElement).style.opacity = "0.75";
-                      (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
-                    }}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p
-              style={{
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.15em",
-                color: "var(--color-muted)",
-                marginBottom: "20px",
-                fontWeight: 500,
-              }}
-            >
-              Contato
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              <a
-                href="https://wa.me/5541991767772"
-                style={{
-                  fontSize: "0.88rem",
-                  color: "var(--color-text)",
-                  textDecoration: "none",
-                  opacity: 0.75,
-                  transition: "opacity 0.2s, color 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLAnchorElement).style.opacity = "1";
-                  (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLAnchorElement).style.opacity = "0.75";
-                  (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
-                }}
-              >
-                WhatsApp
-              </a>
-              <a
-                href="https://instagram.com/psicoalexz"
-                style={{
-                  fontSize: "0.88rem",
-                  color: "var(--color-text)",
-                  textDecoration: "none",
-                  opacity: 0.75,
-                  transition: "opacity 0.2s, color 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLAnchorElement).style.opacity = "1";
-                  (e.target as HTMLAnchorElement).style.color = "var(--color-gold)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLAnchorElement).style.opacity = "0.75";
-                  (e.target as HTMLAnchorElement).style.color = "var(--color-text)";
-                }}
-              >
-                @psicoalexz
-              </a>
-            </div>
-          </div>
+          <p style={{ fontSize: '0.82rem', color: 'var(--stone)', lineHeight: 1.9, maxWidth: 280 }}>
+            Psicologia Jurídica, Forense e de Alta Performance. Atendimento presencial e online em todo o Brasil.
+          </p>
         </div>
 
-        {/* Bottom */}
-        <div
-          className="footer-btm"
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            paddingTop: "24px",
-            borderTop: "1px solid var(--color-border)",
-          }}
-        >
-          <p style={{ fontSize: "0.78rem", color: "var(--color-muted)", opacity: 0.6 }}>
-            Todas as informações são protegidas pelo sigilo profissional conforme o Código de Ética do CFP.
+        {/* Nav */}
+        <nav aria-label="Rodapé" style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <p style={{ fontSize: '0.5rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 8 }}>
+            Navegação
           </p>
-          <p style={{ fontSize: "0.78rem", color: "var(--color-muted)", opacity: 0.6 }}>
-            &copy; {currentYear} Alex Cristoffer Zilotti
+          {navLinks.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              className="ft-link"
+              style={{ fontSize: '0.78rem', color: 'var(--stone)', transition: 'color 0.3s' }}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Info */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <p style={{ fontSize: '0.5rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 8 }}>
+            Informações
           </p>
+          {['CRP 08/48529', 'Curitiba · Paraná', 'Atendimento online em todo Brasil'].map((t) => (
+            <p key={t} style={{ fontSize: '0.78rem', color: 'var(--stone)' }}>{t}</p>
+          ))}
+          <a
+            href="mailto:contato@alexzilotti.com.br"
+            className="ft-link"
+            style={{ fontSize: '0.78rem', color: 'var(--gold)', marginTop: 8, transition: 'color 0.3s' }}
+          >
+            contato@alexzilotti.com.br
+          </a>
         </div>
       </div>
 
-      <style jsx>{`
-        @media (max-width: 1100px) {
-          .footer-main { padding: 52px 32px 34px !important; }
-          .footer-grid { grid-template-columns: 1fr !important; gap: 34px !important; }
-          .footer-grid > div:last-child { text-align: left !important; }
-          .footer-btm { flex-direction: column !important; gap: 10px !important; text-align: center !important; }
-        }
-        @media (max-width: 640px) {
-          .footer-main { padding: 52px 24px 34px !important; }
+      <div style={{
+        maxWidth: 1200,
+        margin: '0 auto',
+        padding: '28px 64px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: 12,
+      }}>
+        <p style={{ fontSize: '0.65rem', color: 'var(--muted)', letterSpacing: '0.05em' }}>
+          © 2025 Alex Zilotti · Todos os direitos reservados
+        </p>
+        <p style={{ fontSize: '0.65rem', color: 'var(--muted)', letterSpacing: '0.05em' }}>
+          Psicólogo Jurídico · Psicólogo Forense · Alta Performance
+        </p>
+      </div>
+
+      <style>{`
+        .ft-link:hover { color: var(--ivory) !important; }
+        @media (max-width: 768px) {
+          .ft-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 48px 28px !important; }
+          footer > div:last-child { padding: 20px 28px !important; flex-direction: column !important; align-items: flex-start !important; }
         }
       `}</style>
     </footer>
-  );
+  )
 }

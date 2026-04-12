@@ -1,38 +1,175 @@
-"use client";
-import Image from "next/image";
+'use client'
+
+import { motion } from 'framer-motion'
+import { ButtonPrimary, ButtonGhost } from '@/components/ui/Buttons'
+
+const up = (delay: number) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 1.1, delay, ease: [0.16, 1, 0.3, 1] as const },
+})
 
 export default function Hero() {
   return (
-    <section id="inicio" style={{ minHeight: "100vh", display: "grid", gridTemplateColumns: "1fr 1fr", position: "relative", overflow: "hidden", background: "var(--color-bg)" }} className="hero-grid">
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 64px 100px", paddingTop: "160px", position: "relative", zIndex: 2 }} className="hero-left">
-        </p>
-              <p className="animate-fade-up delay-1" style={{ fontSize: "0.50rem", textTransform: "uppercase", color: "var(--color-gold)", letterSpacing: "0.15em", marginBottom: "24px" }}>
-          Psicologia Jurídica · Psicologia Organizacional · Psicologia Clínica
-        </p>
-        <h1 className="animate-fade-up delay-2" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.8rem, 6vw, 4.6rem)", fontWeight: 300, lineHeight: 1.12, color: "var(--color-text)", marginBottom: "clamp(20px, 3vw, 32px)", letterSpacing: "-0.02em" }}>
-          Onde pressão,<br /><span style={{ fontStyle: "italic", fontWeight: 400 }}>decisão</span> e psicologia<br />convergem.
-        </h1>
-        <p className="animate-fade-up delay-3" style={{ fontSize: "1.08rem", lineHeight: 1.7, color: "var(--color-muted)", marginBottom: "clamp(32px, 4vw, 48px)", maxWidth: "520px" }}>
-          <strong style={{ color: "var(--color-text)" }}>Alex Cristoffer Zilotti</strong><br />Psicólogo CRP 08/48529 | Curitiba/PR<br /><br />Suporte psicológico para advogados, executivos e empresas — com foco em psicologia jurídica e alta performance.
-        </p>
-        <div className="animate-fade-up delay-4" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <a href="/psicologia-juridica" className="btn-gold">Solicitar Assistente Técnico</a>
-          <a href="https://wa.me/5541991767772" className="btn-ghost">Agendar Consulta</a>
-        </div>
+    <section
+      className="hero-wrap"
+      style={{
+        minHeight: '100vh',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Left */}
+      <div
+        className="hero-left"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+          padding: '0 64px 100px',
+          position: 'relative',
+          zIndex: 2,
+        }}
+      >
+        <motion.div
+          {...up(0.3)}
+          style={{
+            fontSize: '0.52rem',
+            letterSpacing: '0.38em',
+            textTransform: 'uppercase',
+            color: 'var(--gold)',
+            fontWeight: 400,
+            marginBottom: 32,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 14,
+          }}
+        >
+          <span style={{ width: 22, height: 1, background: 'var(--gdim)', display: 'inline-block', flexShrink: 0 }} />
+          Psicologia Jurídica · Alta Performance · Psicologia Forense
+        </motion.div>
+
+        <motion.h1
+          {...up(0.5)}
+          style={{
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontSize: 'clamp(2.5rem, 4.8vw, 4.6rem)',
+            fontWeight: 300,
+            lineHeight: 1.07,
+            letterSpacing: '-0.015em',
+            color: 'var(--warm)',
+            marginBottom: 30,
+          }}
+        >
+          Onde pressão,{' '}
+          <em style={{ fontStyle: 'italic', color: 'var(--glt)', fontWeight: 300 }}>decisão</em>{' '}
+          e psicologia convergem.
+        </motion.h1>
+
+        <motion.p
+          {...up(0.7)}
+          style={{
+            fontSize: '0.88rem',
+            color: 'var(--stone)',
+            lineHeight: 1.92,
+            maxWidth: 410,
+            marginBottom: 50,
+          }}
+        >
+          Atendimento para quem opera sob responsabilidade real. Suporte técnico especializado
+          para escritórios e advogados que enfrentam casos onde Direito e Psicologia se cruzam.
+        </motion.p>
+
+        <motion.div
+          {...up(0.9)}
+          style={{ display: 'flex', alignItems: 'center', gap: 34, flexWrap: 'wrap' }}
+        >
+          <ButtonPrimary href="#contato">Solicitar Avaliação</ButtonPrimary>
+          <ButtonGhost href="/juridico">Para Advogados</ButtonGhost>
+        </motion.div>
       </div>
 
-      <div style={{ position: "relative", overflow: "hidden" }} className="hero-right">
-        <Image src="/images/hero.jpg" alt="Alex Cristoffer Zilotti" fill style={{ objectFit: "cover", objectPosition: "center" }} priority />
-        <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "160px", background: "linear-gradient(to right, var(--color-bg), transparent)", zIndex: 1 }}></div>
+      {/* Right image */}
+      <div style={{ position: 'relative', overflow: 'hidden' }} className="hero-right">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: 'url(https://picsum.photos/seed/professional/800/1100)',
+            backgroundSize: 'cover',
+            backgroundPosition: '55% top',
+          }}
+        />
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to right, var(--ink) 0%, rgba(9,8,10,0.25) 35%, transparent 65%)',
+        }} />
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to top, rgba(9,8,10,0.55) 0%, transparent 40%)',
+        }} />
+
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.3, ease: [0.16, 1, 0.3, 1] }}
+          style={{ position: 'absolute', bottom: 56, right: 44, textAlign: 'right', zIndex: 3 }}
+        >
+          <p style={{
+            fontSize: '0.52rem',
+            letterSpacing: '0.15em',
+            textTransform: 'uppercase',
+            color: 'rgba(176,168,184,0.45)',
+            lineHeight: 2.2,
+          }}>
+            Pós-graduando em Psicologia Forense e Jurídica<br />
+            Pós-graduando em TCC de Alta Performance<br />
+            <strong style={{ color: 'var(--gdim)', fontWeight: 400, fontSize: '0.52rem' }}>CRP 08/48529</strong>
+          </p>
+        </motion.div>
       </div>
 
-      <style jsx>{`
-        @media (max-width: 1100px) {
-          .hero-grid { grid-template-columns: 1fr !important; }
-          .hero-left { padding: 0 32px 76px !important; min-height: 100vh !important; }
-          .hero-right { position: absolute !important; inset: 0 !important; }
+      {/* Scroll hint */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.9, duration: 1 }}
+        style={{
+          position: 'absolute',
+          bottom: 36,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 9,
+          zIndex: 3,
+        }}
+      >
+        <span style={{ fontSize: '0.45rem', letterSpacing: '0.34em', textTransform: 'uppercase', color: 'var(--muted)' }}>
+          Scroll
+        </span>
+        <div style={{
+          width: 1,
+          height: 34,
+          background: 'linear-gradient(to bottom, var(--gdim), transparent)',
+          animation: 'scrollPulse 2.4s ease-in-out infinite',
+        }} />
+      </motion.div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-wrap { grid-template-columns: 1fr !important; }
+          .hero-right { display: none !important; }
+          .hero-left { padding: 120px 28px 80px !important; justify-content: flex-start !important; }
         }
       `}</style>
     </section>
-  );
+  )
 }
