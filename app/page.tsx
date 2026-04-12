@@ -1,34 +1,32 @@
 import type { Metadata } from 'next'
-import Hero from '@/components/home/Hero'
-import Statement from '@/components/home/Statement'
-import Services from '@/components/home/Services'
-import Publico from '@/components/home/Publico'
-import Sobre from '@/components/home/Sobre'
-import Processo from '@/components/home/Processo'
-import Contato from '@/components/home/Contato'
+import {
+  HeroJuridico,
+  IntroJuridico,
+  CinematicStrip,
+  ServicosJuridico,
+  BeneficiosJuridico,
+} from '@/components/juridico/JuridicoComponents'
 
 export const metadata: Metadata = {
-  title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance — CRP 08/48529',
+  title: 'Assistente Perito em Psicologia Jurídica | Alex Zilotti',
   description:
-    'Atendimento para quem opera sob responsabilidade real. Psicologia Jurídica, Forense e de Alta Performance. Curitiba e atendimento online.',
+    'Suporte técnico especializado para advogados e escritórios: análise de laudos, formulação de quesitos, pareceres técnicos e acompanhamento de perícias psicológicas.',
   openGraph: {
-    title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance',
+    title: 'Assistente Perito em Psicologia Jurídica | Alex Zilotti',
     description:
-      'Psicologia que opera onde a pressão é real, as decisões são definitivas e a discrição é inegociável.',
-    images: ['https://picsum.photos/seed/professional/1200/630'],
+      'Quando Direito e Psicologia se cruzam, a qualidade do suporte técnico psicológico determina a robustez da estratégia.',
+    images: ['https://picsum.photos/seed/law/1200/630'],
   },
 }
 
-export default function Home() {
+export default function JuridicoPage() {
   return (
     <>
-      <Hero />
-      <Statement />
-      <Services />
-      <Publico />
-      <Sobre />
-      <Processo />
-      <Contato />
+      <HeroJuridico />
+      <IntroJuridico />
+      <CinematicStrip />
+      <ServicosJuridico />
+      <BeneficiosJuridico />
     </>
   )
 }
