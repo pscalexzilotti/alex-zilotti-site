@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import LegalSection from "@/components/juridico/LegalSection";
 
 export default function JuridicoPage() {
   return (
@@ -40,9 +39,6 @@ export default function JuridicoPage() {
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="https://wa.me/5541991767772?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20caso%20jurídico." className="btn-gold">Enviar Caso para Análise</a>
           </div>
-        </section>
-        <section style={{ padding: "40px 0" }}>
-          <LegalSection />
         </section>
         <section style={{ padding: "80px 64px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid #333" }}>
           <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px" }} className="juridico-grid">

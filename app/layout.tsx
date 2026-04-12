@@ -3,8 +3,8 @@ import { cormorant, jost } from './fonts'
 import './globals.css'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
-import Cursor from '@/components/layout/Cursor'
-import WhatsAppButton from '@/components/layout/WhatsAppButton'
+import Cursor from '@/components/ui/Cursor'
+import WhatsAppButton from '@/components/ui/WhatsAppButton'
 
 export const metadata: Metadata = {
   title: 'Alex Zilotti | Psicólogo Jurídico & Alta Performance — CRP 08/48529',
