@@ -1,4 +1,4 @@
-import RevealWrapper from '@/components/ui/RevealWrapper'
+﻿import RevealWrapper from '@/components/ui/RevealWrapper'
 
 export default function Statement() {
   return (
@@ -34,12 +34,13 @@ export default function Statement() {
           margin: '0 auto',
           letterSpacing: '0.01em',
         }}>
-          Há decisões que não comportam erros. Há processos que não admitem fragilidades. Há vidas
+          HÃ¡ decisÃµes que nÃ£o comportam erros. HÃ¡ processos que nÃ£o admitem fragilidades. HÃ¡ vidas
           que{' '}
           <strong style={{ fontWeight: 400, color: 'var(--warm)' }}>exigem clareza profunda</strong>
-          {' '}— não conforto superficial.
+          {' '}â€” nÃ£o conforto superficial.
         </p>
       </RevealWrapper>
     </section>
   )
 }
+

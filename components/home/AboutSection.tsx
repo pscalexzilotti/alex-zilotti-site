@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 const credentials = [
   "CRP 08/48529 (ativa e regularizada)",
   "Mestrando em Psicologia Organizacional",
-  "Especializando em Psicologia Jurídica e Forense",
+  "Especializando em Psicologia JurÃ­dica e Forense",
   "Especializando em TCC de Alta Performance",
-  "MBA em Gestão de Pessoas e Desenvolvimento Gerencial",
-  "Formação em Hipnose Clínica",
+  "MBA em GestÃ£o de Pessoas e Desenvolvimento Gerencial",
+  "FormaÃ§Ã£o em Hipnose ClÃ­nica",
   "Atendimento presencial em Curitiba/PR e online nacional",
 ];
 export default function AboutSection() {
@@ -35,7 +35,7 @@ export default function AboutSection() {
             className="about-img-wrap"
           >
             <img
-              src="/images/sobre.jpg"
+              src="/images/sobre.jpeg"
               alt="Alex Cristoffer Zilotti"
               style={{
                 position: "absolute",
@@ -126,7 +126,7 @@ export default function AboutSection() {
                 fontSize: "0.95rem",
               }}
             >
-              Psicólogo com 15 anos em organizações como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurídica/forense, clínica (TCC) e organizacional.
+              PsicÃ³logo com 15 anos em organizaÃ§Ãµes como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurÃ­dica/forense, clÃ­nica (TCC) e organizacional.
             </p>
 
             {/* Descricao desktop */}
@@ -140,7 +140,7 @@ export default function AboutSection() {
                 fontSize: "0.95rem",
               }}
             >
-              Psicólogo com 15 anos de experiência em organizações de elite como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurídica/forense, clínica (TCC) e organizacional. Integro rigor científico, experiência corporativa e precisão jurídica para atender contextos de máxima exigência.
+              PsicÃ³logo com 15 anos de experiÃªncia em organizaÃ§Ãµes de elite como Vale, Petrobras, XP Investimentos e Portugal. Especializado em psicologia jurÃ­dica/forense, clÃ­nica (TCC) e organizacional. Integro rigor cientÃ­fico, experiÃªncia corporativa e precisÃ£o jurÃ­dica para atender contextos de mÃ¡xima exigÃªncia.
             </p>
 
             {/* Credentials */}
@@ -212,3 +212,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

@@ -1,39 +1,39 @@
-"use client";
+﻿"use client";
 
 const services = [
   {
     n: "01",
-    tag: "Jurídico",
-    title: "Assistência Técnica Psicológica",
-    body: "Atuação técnica voltada a advogados e escritórios que precisam analisar elementos psicológicos relevantes ao litígio com clareza, segurança e profundidade estratégica.",
+    tag: "JurÃ­dico",
+    title: "AssistÃªncia TÃ©cnica PsicolÃ³gica",
+    body: "AtuaÃ§Ã£o tÃ©cnica voltada a advogados e escritÃ³rios que precisam analisar elementos psicolÃ³gicos relevantes ao litÃ­gio com clareza, seguranÃ§a e profundidade estratÃ©gica.",
     desktopBody:
-      "Suporte técnico especializado para advogados e escritórios na análise de elementos psicológicos relevantes ao litígio. Com leitura criteriosa de documentos, avaliação de pontos sensíveis do caso e elaboração de pareceres, o trabalho contribui para o fortalecimento do contraditório e para decisões processuais mais seguras.",
+      "Suporte tÃ©cnico especializado para advogados e escritÃ³rios na anÃ¡lise de elementos psicolÃ³gicos relevantes ao litÃ­gio. Com leitura criteriosa de documentos, avaliaÃ§Ã£o de pontos sensÃ­veis do caso e elaboraÃ§Ã£o de pareceres, o trabalho contribui para o fortalecimento do contraditÃ³rio e para decisÃµes processuais mais seguras.",
     bullets: [
-      "Análise técnica de fatos, laudos e documentos",
-      "Leitura crítica para contraditório, quesitos e impugnações",
+      "AnÃ¡lise tÃ©cnica de fatos, laudos e documentos",
+      "Leitura crÃ­tica para contraditÃ³rio, quesitos e impugnaÃ§Ãµes",
       "Pareceres com linguagem objetiva e utilidade processual",
-      "Demandas cíveis, trabalhistas e familiares",
+      "Demandas cÃ­veis, trabalhistas e familiares",
     ],
-    note: "Diferencial: experiência pericial no contexto do TJPR e atuação como assistente técnico da parte.",
-    cta: "Solicitar análise técnica",
+    note: "Diferencial: experiÃªncia pericial no contexto do TJPR e atuaÃ§Ã£o como assistente tÃ©cnico da parte.",
+    cta: "Solicitar anÃ¡lise tÃ©cnica",
     ctaHref: "/psicologia-juridica",
     highlight: true,
   },
   {
     n: "02",
-    tag: "Clínica",
+    tag: "ClÃ­nica",
     title: "Psicoterapia para Executivos e Advogados",
-    body: "Atendimento psicoterápico para profissionais de alta performance: executivos, advogados e lideranças sob pressão constante.",
+    body: "Atendimento psicoterÃ¡pico para profissionais de alta performance: executivos, advogados e lideranÃ§as sob pressÃ£o constante.",
     desktopBody:
-      "Para executivos, advogados e profissionais que operam sob pressão constante, ofereço psicoterapia focada em regulação emocional, tomada de decisão em contextos críticos e saúde mental de longo prazo. Abordagem científica, sigilo absoluto e atendimento online ou presencial.",
+      "Para executivos, advogados e profissionais que operam sob pressÃ£o constante, ofereÃ§o psicoterapia focada em regulaÃ§Ã£o emocional, tomada de decisÃ£o em contextos crÃ­ticos e saÃºde mental de longo prazo. Abordagem cientÃ­fica, sigilo absoluto e atendimento online ou presencial.",
     bullets: [
-      "Regulação emocional e gestão do estresse",
-      "Suporte em decisões complexas e transições",
+      "RegulaÃ§Ã£o emocional e gestÃ£o do estresse",
+      "Suporte em decisÃµes complexas e transiÃ§Ãµes",
       "Terapia Cognitivo-Comportamental (TCC)",
       "Atendimento individual, online ou presencial",
     ],
-    note: "Foco em clareza emocional e desempenho sustentável.",
-    cta: "Agendar sessão",
+    note: "Foco em clareza emocional e desempenho sustentÃ¡vel.",
+    cta: "Agendar sessÃ£o",
     ctaHref: "#contato",
     highlight: false,
   },
@@ -41,16 +41,16 @@ const services = [
     n: "03",
     tag: "Empresas",
     title: "Psicologia Organizacional",
-    body: "Consultoria em desenvolvimento humano para empresas que valorizam liderança sólida, clima organizacional saudável e saúde mental no trabalho.",
+    body: "Consultoria em desenvolvimento humano para empresas que valorizam lideranÃ§a sÃ³lida, clima organizacional saudÃ¡vel e saÃºde mental no trabalho.",
     desktopBody:
-      "Soluções corporativas personalizadas para desenvolvimento de liderança executiva, gestão de conflitos internos, prevenção de burnout e adequação à NR-1 em saúde mental ocupacional. Formatos flexíveis: projetos sob demanda, contratos de médio prazo ou workshops in-company.",
+      "SoluÃ§Ãµes corporativas personalizadas para desenvolvimento de lideranÃ§a executiva, gestÃ£o de conflitos internos, prevenÃ§Ã£o de burnout e adequaÃ§Ã£o Ã  NR-1 em saÃºde mental ocupacional. Formatos flexÃ­veis: projetos sob demanda, contratos de mÃ©dio prazo ou workshops in-company.",
     bullets: [
-      "Desenvolvimento de liderança e equipes",
-      "Gestão de conflitos e clima organizacional",
-      "Prevenção de burnout e NR-1 saúde mental",
+      "Desenvolvimento de lideranÃ§a e equipes",
+      "GestÃ£o de conflitos e clima organizacional",
+      "PrevenÃ§Ã£o de burnout e NR-1 saÃºde mental",
       "Palestras, SIPAT e programas de engajamento",
     ],
-    note: "15+ anos de atuação em ambientes corporativos de alta complexidade.",
+    note: "15+ anos de atuaÃ§Ã£o em ambientes corporativos de alta complexidade.",
     cta: "Solicitar proposta",
     ctaHref: "#contato",
     highlight: false,
@@ -76,7 +76,7 @@ export default function ServicesGrid() {
           marginBottom: "16px",
         }}
       >
-        Áreas de Atuação
+        Ãreas de AtuaÃ§Ã£o
       </p>
       <h2
         style={{
@@ -152,7 +152,7 @@ export default function ServicesGrid() {
               {svc.title}
             </h3>
 
-            {/* Body — mobile: svc.body, desktop: svc.desktopBody */}
+            {/* Body â€” mobile: svc.body, desktop: svc.desktopBody */}
             <p
               className="svc-body-mobile"
               style={{
@@ -187,7 +187,7 @@ export default function ServicesGrid() {
                     alignItems: "flex-start",
                   }}
                 >
-                  <span style={{ opacity: 0.5 }}>—</span> {b}
+                  <span style={{ opacity: 0.5 }}>â€”</span> {b}
                 </li>
               ))}
             </ul>
@@ -259,3 +259,4 @@ export default function ServicesGrid() {
     </section>
   );
 }
+

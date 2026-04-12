@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import RevealWrapper from '@/components/ui/RevealWrapper'
@@ -45,7 +45,7 @@ function SvcCard({
           <span style={{ fontFamily: 'var(--font-cormorant), Georgia, serif', fontSize: '0.7rem', letterSpacing: '0.2em', color: 'var(--gdim)', marginBottom: 26, display: 'block' }}>{num}</span>
           <h3 style={{ fontFamily: 'var(--font-cormorant), Georgia, serif', fontSize: 'clamp(1.15rem, 1.9vw, 1.7rem)', fontWeight: 300, color: 'var(--warm)', letterSpacing: '-0.01em', marginBottom: 16 }}>{title}</h3>
           <p style={{ fontSize: '0.84rem', color: 'var(--stone)', lineHeight: 1.9, marginBottom: 30 }}>
-            Suporte técnico especializado para advogados que precisam de expertise psicológica em processos judiciais complexos.
+            Suporte tÃ©cnico especializado para advogados que precisam de expertise psicolÃ³gica em processos judiciais complexos.
           </p>
           <ButtonGhost href="/juridico">Ver frente completa</ButtonGhost>
         </div>
@@ -96,7 +96,7 @@ function SvcCard({
 export default function Services() {
   return (
     <section id="servicos" style={{ background: 'var(--charcoal)', padding: '128px 64px' }}>
-      <RevealWrapper><SectionLabel>Áreas de Atuação</SectionLabel></RevealWrapper>
+      <RevealWrapper><SectionLabel>Ãreas de AtuaÃ§Ã£o</SectionLabel></RevealWrapper>
       <RevealWrapper delay={0.1}>
         <h2 style={{
           fontFamily: 'var(--font-cormorant), Georgia, serif',
@@ -122,14 +122,14 @@ export default function Services() {
         <RevealWrapper delay={0.1} style={{ display: 'contents' }}>
           <SvcCard
             num="01"
-            title="Clínica Cognitiva de Alta Performance"
-            desc="Psicoterapia especializada para quem não pode se dar ao luxo de ficar paralisado."
+            title="ClÃ­nica Cognitiva de Alta Performance"
+            desc="Psicoterapia especializada para quem nÃ£o pode se dar ao luxo de ficar paralisado."
             items={[
               'TCC de Alta Performance',
-              'Hipnose Clínica',
-              'Regulação emocional sob pressão',
-              'Tomada de decisão e clareza mental',
-              'Processo terapêutico de alta profundidade',
+              'Hipnose ClÃ­nica',
+              'RegulaÃ§Ã£o emocional sob pressÃ£o',
+              'Tomada de decisÃ£o e clareza mental',
+              'Processo terapÃªutico de alta profundidade',
             ]}
           />
         </RevealWrapper>
@@ -137,14 +137,14 @@ export default function Services() {
         <RevealWrapper delay={0.2} style={{ display: 'contents' }}>
           <SvcCard
             num="02"
-            title="Psicologia Jurídica e Forense"
-            desc="Suporte psicológico em contextos de alto risco legal, familiar e institucional."
+            title="Psicologia JurÃ­dica e Forense"
+            desc="Suporte psicolÃ³gico em contextos de alto risco legal, familiar e institucional."
             items={[
-              'Avaliação psicológica pericial',
+              'AvaliaÃ§Ã£o psicolÃ³gica pericial',
               'Suporte em processos de guarda',
-              'Intervenção em situações de violência',
+              'IntervenÃ§Ã£o em situaÃ§Ãµes de violÃªncia',
               'Acompanhamento em processos criminais',
-              'Psicologia aplicada ao sistema de justiça',
+              'Psicologia aplicada ao sistema de justiÃ§a',
             ]}
           />
         </RevealWrapper>
@@ -153,18 +153,18 @@ export default function Services() {
           <SvcCard
             num="03"
             title="Assistente Perito para Advogados"
-            tag="Frente Estratégica"
+            tag="Frente EstratÃ©gica"
             featured
             items={[
-              'Análise crítica de laudos periciais',
-              'Formulação de quesitos técnicos',
-              'Pareceres psicológicos',
-              'Acompanhamento de perícias',
-              'Estratégia processual psi',
-              'Apoio em audiências',
-              'Impugnação de laudos',
-              'Consultas jurídico-psicológicas',
-              'Relatórios técnicos especializados',
+              'AnÃ¡lise crÃ­tica de laudos periciais',
+              'FormulaÃ§Ã£o de quesitos tÃ©cnicos',
+              'Pareceres psicolÃ³gicos',
+              'Acompanhamento de perÃ­cias',
+              'EstratÃ©gia processual psi',
+              'Apoio em audiÃªncias',
+              'ImpugnaÃ§Ã£o de laudos',
+              'Consultas jurÃ­dico-psicolÃ³gicas',
+              'RelatÃ³rios tÃ©cnicos especializados',
             ]}
           />
         </RevealWrapper>
@@ -178,3 +178,4 @@ export default function Services() {
     </section>
   )
 }
+

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import type { ReactNode, CSSProperties } from 'react'
@@ -24,3 +24,4 @@ export default function RevealWrapper({ children, delay = 0, className, style }:
     </motion.div>
   )
 }
+

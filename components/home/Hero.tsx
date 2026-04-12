@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
 
       <div style={{ position: 'relative', overflow: 'hidden' }} className="hero-right">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }} style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }} style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/hero.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, var(--ink) 0%, rgba(9,8,10,0.25) 35%, transparent 65%)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(9,8,10,0.55) 0%, transparent 40%)' }} />
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.3, ease: [0.16, 1, 0.3, 1] }} style={{ position: 'absolute', bottom: 56, right: 44, textAlign: 'right', zIndex: 3 }}>
@@ -57,3 +57,4 @@ export default function Hero() {
     </section>
   )
 }
+

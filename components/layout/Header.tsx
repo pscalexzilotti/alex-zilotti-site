@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/psicologia-juridica", label: "Jurídico" },
+  { href: "/psicologia-juridica", label: "JurÃ­dico" },
   { href: "/#psicoterapia", label: "Psicoterapia" },
   { href: "//empresas", label: "Empresas" },
   { href: "/#sobre", label: "Sobre" },
@@ -42,7 +42,7 @@ export default function Header() {
             Alex Cristoffer Zilotti
           </p>
           <p style={{ fontSize: "0.65rem", fontWeight: 600, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--color-gold)" }}>
-            Psicólogo · CRP 08/48529
+            PsicÃ³logo Â· CRP 08/48529
           </p>
         </a>
 
@@ -80,3 +80,4 @@ export default function Header() {
     </>
   );
 }
+

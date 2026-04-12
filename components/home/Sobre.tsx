@@ -16,7 +16,7 @@ export default function Sobre() {
         <RevealWrapper>
           <div style={{ position: 'sticky', top: 120 }}>
             <div style={{ position: 'relative', overflow: 'hidden', aspectRatio: '2/3' }}>
-              <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/sobre.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+              <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/sobre.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,14,16,0.7) 0%, transparent 50%)' }} />
               <div style={{ position: 'absolute', bottom: 28, left: 28, right: 28 }}>
                 <p style={{ fontFamily: 'var(--font-cormorant), Georgia, serif', fontSize: '1.15rem', fontWeight: 300, color: 'var(--warm)', letterSpacing: '0.02em' }}>Alex Cristoffer Zilotti</p>
@@ -73,3 +73,4 @@ export default function Sobre() {
     </section>
   )
 }
+

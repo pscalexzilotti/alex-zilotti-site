@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import RevealWrapper from '@/components/ui/RevealWrapper'
@@ -6,28 +6,28 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 const cards = [
   {
-    title: 'Empresários e Executivos',
-    desc: 'Líderes que tomam decisões de alto impacto e precisam de clareza mental, resiliência e equilíbrio emocional para performar sem se destruir.',
+    title: 'EmpresÃ¡rios e Executivos',
+    desc: 'LÃ­deres que tomam decisÃµes de alto impacto e precisam de clareza mental, resiliÃªncia e equilÃ­brio emocional para performar sem se destruir.',
   },
   {
     title: 'Artistas e Influenciadores',
-    desc: 'Profissionais expostos à pressão constante do público, da imagem e da performance, que precisam de suporte psicológico discreto e especializado.',
+    desc: 'Profissionais expostos Ã  pressÃ£o constante do pÃºblico, da imagem e da performance, que precisam de suporte psicolÃ³gico discreto e especializado.',
   },
   {
     title: 'Pessoas em Processos Judiciais',
-    desc: 'Indivíduos que enfrentam disputas legais complexas — guarda, divórcio, processos criminais — e precisam de suporte psicológico qualificado.',
+    desc: 'IndivÃ­duos que enfrentam disputas legais complexas â€” guarda, divÃ³rcio, processos criminais â€” e precisam de suporte psicolÃ³gico qualificado.',
   },
   {
-    title: 'Líderes sob Alta Responsabilidade',
-    desc: 'Profissionais em posições de alta responsabilidade que gerenciam equipes, crises e decisões com consequências reais e duradouras.',
+    title: 'LÃ­deres sob Alta Responsabilidade',
+    desc: 'Profissionais em posiÃ§Ãµes de alta responsabilidade que gerenciam equipes, crises e decisÃµes com consequÃªncias reais e duradouras.',
   },
   {
-    title: 'Advogados e Escritórios',
-    desc: 'Profissionais jurídicos que precisam de suporte técnico especializado em psicologia para casos onde Direito e Psicologia se cruzam.',
+    title: 'Advogados e EscritÃ³rios',
+    desc: 'Profissionais jurÃ­dicos que precisam de suporte tÃ©cnico especializado em psicologia para casos onde Direito e Psicologia se cruzam.',
   },
   {
-    title: 'Famílias em Contextos Sensíveis',
-    desc: 'Famílias que atravessam situações delicadas — separações litigiosas, crises familiares, processos de guarda — e precisam de intervenção especializada.',
+    title: 'FamÃ­lias em Contextos SensÃ­veis',
+    desc: 'FamÃ­lias que atravessam situaÃ§Ãµes delicadas â€” separaÃ§Ãµes litigiosas, crises familiares, processos de guarda â€” e precisam de intervenÃ§Ã£o especializada.',
   },
 ]
 
@@ -73,7 +73,7 @@ export default function Publico() {
           color: 'var(--warm)', letterSpacing: '-0.01em', marginBottom: 68,
         }}>
           Quem busca esse{' '}
-          <em style={{ fontStyle: 'italic', color: 'var(--glt)' }}>nível de trabalho</em>
+          <em style={{ fontStyle: 'italic', color: 'var(--glt)' }}>nÃ­vel de trabalho</em>
         </h2>
       </RevealWrapper>
 
@@ -100,3 +100,4 @@ export default function Publico() {
     </section>
   )
 }
+

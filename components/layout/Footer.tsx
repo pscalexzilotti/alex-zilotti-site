@@ -1,9 +1,9 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Clínica', href: '/clinica' },
+  { label: 'ClÃ­nica', href: '/clinica' },
   { label: 'Para Advogados', href: '/juridico' },
-  { label: 'Imersão', href: '/clinica#imersao' },
+  { label: 'ImersÃ£o', href: '/clinica#imersao' },
   { label: 'Sobre', href: '/#sobre' },
   { label: 'Contato', href: '/#contato' },
 ]
@@ -45,18 +45,18 @@ export default function Footer() {
               fontWeight: 400,
               marginTop: 3,
             }}>
-              Psicólogo · CRP 08/48529
+              PsicÃ³logo Â· CRP 08/48529
             </small>
           </div>
           <p style={{ fontSize: '0.82rem', color: 'var(--stone)', lineHeight: 1.9, maxWidth: 280 }}>
-            Psicologia Jurídica, Forense e de Alta Performance. Atendimento presencial e online em todo o Brasil.
+            Psicologia JurÃ­dica, Forense e de Alta Performance. Atendimento presencial e online em todo o Brasil.
           </p>
         </div>
 
         {/* Nav */}
-        <nav aria-label="Rodapé" style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+        <nav aria-label="RodapÃ©" style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
           <p style={{ fontSize: '0.5rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 8 }}>
-            Navegação
+            NavegaÃ§Ã£o
           </p>
           {navLinks.map(({ label, href }) => (
             <Link
@@ -73,9 +73,9 @@ export default function Footer() {
         {/* Info */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <p style={{ fontSize: '0.5rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 8 }}>
-            Informações
+            InformaÃ§Ãµes
           </p>
-          {['CRP 08/48529', 'Curitiba · Paraná', 'Atendimento online em todo Brasil'].map((t) => (
+          {['CRP 08/48529', 'Curitiba Â· ParanÃ¡', 'Atendimento online em todo Brasil'].map((t) => (
             <p key={t} style={{ fontSize: '0.78rem', color: 'var(--stone)' }}>{t}</p>
           ))}
           <a
@@ -99,10 +99,10 @@ export default function Footer() {
         gap: 12,
       }}>
         <p style={{ fontSize: '0.65rem', color: 'var(--muted)', letterSpacing: '0.05em' }}>
-          © 2025 Alex Zilotti · Todos os direitos reservados
+          Â© 2025 Alex Zilotti Â· Todos os direitos reservados
         </p>
         <p style={{ fontSize: '0.65rem', color: 'var(--muted)', letterSpacing: '0.05em' }}>
-          Psicólogo Jurídico · Psicólogo Forense · Alta Performance
+          PsicÃ³logo JurÃ­dico Â· PsicÃ³logo Forense Â· Alta Performance
         </p>
       </div>
 
@@ -116,3 +116,4 @@ export default function Footer() {
     </footer>
   )
 }
+

@@ -102,7 +102,7 @@ export function Imersao() {
   return (
     <section id="workshop" style={{ background: 'var(--charcoal)' }}>
       <div style={{ position: 'relative', height: 520, overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/workshop.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/workshop.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(26,25,27,0.3) 0%, var(--charcoal) 100%)' }} />
         <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: 64 }}>
           <div style={{ display: 'inline-flex', alignSelf: 'flex-start', fontSize: '0.48rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gdim)', border: '1px solid rgba(154,128,96,0.22)', padding: '7px 14px', marginBottom: 20 }}>
@@ -137,7 +137,7 @@ export function AbordagemClinica() {
       <div className="abordagem-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, maxWidth: 1200, margin: '0 auto', alignItems: 'center' }}>
         <RevealWrapper>
           <div style={{ position: 'relative', overflow: 'hidden', aspectRatio: '7/5' }}>
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/clinica.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/clinica.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(9,8,10,0.3) 0%, transparent 60%)' }} />
           </div>
         </RevealWrapper>
@@ -160,3 +160,4 @@ export function AbordagemClinica() {
     </section>
   )
 }
+

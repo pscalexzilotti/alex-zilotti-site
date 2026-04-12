@@ -1,21 +1,21 @@
-import RevealWrapper from '@/components/ui/RevealWrapper'
+﻿import RevealWrapper from '@/components/ui/RevealWrapper'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 const steps = [
   {
     num: '01',
     title: 'Contato Inicial',
-    desc: 'Uma conversa direta, confidencial e sem protocolo desnecessário. Esse primeiro contato permite entender o contexto, avaliar adequação e responder com clareza o que pode ser feito — e como.',
+    desc: 'Uma conversa direta, confidencial e sem protocolo desnecessÃ¡rio. Esse primeiro contato permite entender o contexto, avaliar adequaÃ§Ã£o e responder com clareza o que pode ser feito â€” e como.',
   },
   {
     num: '02',
-    title: 'Sessão de Avaliação',
-    desc: 'Uma sessão estruturada para mapeamento aprofundado. É onde a demanda real é identificada, o processo adequado é desenhado e a relação clínica começa a se construir com seriedade.',
+    title: 'SessÃ£o de AvaliaÃ§Ã£o',
+    desc: 'Uma sessÃ£o estruturada para mapeamento aprofundado. Ã‰ onde a demanda real Ã© identificada, o processo adequado Ã© desenhado e a relaÃ§Ã£o clÃ­nica comeÃ§a a se construir com seriedade.',
   },
   {
     num: '03',
-    title: 'Processo Terapêutico',
-    desc: 'Um percurso clínico construído com critério, ajustado conforme evolução e orientado por objetivos concretos. Sem prazo fixo. Com profundidade real.',
+    title: 'Processo TerapÃªutico',
+    desc: 'Um percurso clÃ­nico construÃ­do com critÃ©rio, ajustado conforme evoluÃ§Ã£o e orientado por objetivos concretos. Sem prazo fixo. Com profundidade real.',
   },
 ]
 
@@ -31,7 +31,7 @@ export default function Processo() {
           color: 'var(--warm)', letterSpacing: '-0.01em', marginBottom: 80,
         }}>
           Um processo{' '}
-          <em style={{ fontStyle: 'italic', color: 'var(--glt)' }}>construído com intenção</em>
+          <em style={{ fontStyle: 'italic', color: 'var(--glt)' }}>construÃ­do com intenÃ§Ã£o</em>
         </h2>
       </RevealWrapper>
 
@@ -76,3 +76,4 @@ export default function Processo() {
     </section>
   )
 }
+

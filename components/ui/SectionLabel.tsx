@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+﻿import type { ReactNode } from 'react'
 
 export default function SectionLabel({ children, center }: { children: ReactNode; center?: boolean }) {
   return (
@@ -19,3 +19,4 @@ export default function SectionLabel({ children, center }: { children: ReactNode
     </div>
   )
 }
+

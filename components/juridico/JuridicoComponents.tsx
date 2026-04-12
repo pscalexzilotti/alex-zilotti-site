@@ -60,7 +60,7 @@ export function IntroJuridico() {
 export function CinematicStrip() {
   return (
     <div style={{ position: 'relative', height: 360, overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/juridico.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/juridico.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, var(--ink) 0%, transparent 30%, transparent 70%, var(--ink) 100%)' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(9,8,10,0.45)' }} />
       <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 64px' }}>
@@ -154,3 +154,4 @@ export function BeneficiosJuridico() {
     </section>
   )
 }
+
