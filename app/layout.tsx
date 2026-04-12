@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <Cursor />
         <Nav />
-        <main id="main-content">{children}</main>
+        <main id="main-content" style={{ paddingTop: 100 }}>{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
