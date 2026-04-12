@@ -3,7 +3,7 @@
 const navLinks = [
   { label: 'ClÃ­nica', href: '/clinica' },
   { label: 'Para Advogados', href: '/juridico' },
-  { label: 'ImersÃ£o', href: '/clinica#imersao' },
+  { label: 'ImersÃ£o', href: '/workshop' },
   { label: 'Sobre', href: '/#sobre' },
   { label: 'Contato', href: '/#contato' },
 ]
@@ -116,4 +116,7 @@ export default function Footer() {
     </footer>
   )
 }
+
+
+
 
